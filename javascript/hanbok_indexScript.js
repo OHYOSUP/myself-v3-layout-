@@ -26,8 +26,6 @@ const lastPage_imageName = Array.from(imageName);
 
 
 
-mouseoverEvent(lastPage_images);
-mouseoutEvent(lastPage_images);
 
 
 
@@ -54,9 +52,7 @@ const containerArr = Array.from(container);
 let i = -1;
 
 function indexCheck(){
-
   i++;
-
   if(i >= 3){
     i = 3;  
   }
@@ -64,7 +60,6 @@ function indexCheck(){
 }
 
 function indexCheckOpposite(){
-
   i--;
   if(i <= 0){
     i = 0;  
@@ -81,12 +76,6 @@ function boxInVisible(){
   containerArr[i].style.transition = '0.5s';
   }
 
-
-// function nextElem(elem){
-//   elem[i].scrollIntoView({top : 300, left: 0, behavior: "smooth"});
-// }
-
-// nextElem(objectContainerArr[i]);
 
 let timer;
 
@@ -154,3 +143,7 @@ legacySlide(hanbok_legacy_slide, 'wheel');
 // 2. 쓰로틀링으로 인덱스를 매겨준도
 // 3. 인덱스 넘버에 따라 해당 위치에 있는 엘리먼트가 fade in 되도록 해준다
 // 결론: y값은 필요없다
+
+
+mouseoverEvent(lastPage_images);
+mouseoutEvent(lastPage_images);

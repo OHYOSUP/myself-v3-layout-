@@ -197,26 +197,15 @@
         @include flexCenter(space-around, center);
         // border: 1px solid red;
 
-        &>div:nth-child(1) {
-          width: 20vw;
-          height: 60vh;
+        #legacyLastPage_frameOne {
+          width: 30vw;
+          height: 70vh;
           @include flexCenter(center, center);
           flex-direction: column;
           background-color: #fff;
           font-weight: 400;
           font-size: 12px;
           // border: 1px solid blue;
-        }
-
-        &>div:nth-child(2) {
-          width: 20vw;
-          height: 60vh;
-          @include flexCenter(center, center);
-          flex-direction: column;
-          background-color: #fff;
-          font-weight: 400;
-          font-size: 12px;
-          // border: 1px solid red;
         }
       }
     }

@@ -178,20 +178,9 @@
   justify-content: space-around;
   align-items: center;
 }
-#hanbok_legacy > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) {
-  width: 20vw;
-  height: 60vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: #fff;
-  font-weight: 400;
-  font-size: 12px;
-}
-#hanbok_legacy > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) {
-  width: 20vw;
-  height: 60vh;
+#hanbok_legacy > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) #legacyLastPage_frameOne {
+  width: 30vw;
+  height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
