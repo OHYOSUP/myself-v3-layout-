@@ -1,0 +1,376 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin flexCenter($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+
+.colorName {
+  width: 5vw;
+  height: 15vh;
+  @include flexCenter(flex-start, center);
+  transform: scale(5, 5);
+  font-weight: 1000;
+  // color: #fff;
+  mix-blend-mode: overlay;
+}
+
+.colorDescription {
+  width: 36vw;
+  height: 2vh;
+  @include flexCenter(flex-end, center);
+  font-weight: 600;
+  mix-blend-mode: overlay;
+}
+
+
+
+
+
+#hanbok_newWave_mainPage {
+  width: 100vw;
+  background-color: #565656;
+  @include flexCenter(center, center);
+}
+
+#newWave_textbox {
+  width: 20vw;
+  height: 50vh;
+  // border: 1px  solid red;
+  position: absolute;
+  @include flexCenter(center, center);
+  flex-direction: column;
+  color: #fff;
+
+  &>div {
+    width: 20vw;
+    height: 10vh;
+    @include flexCenter(center, center);
+    font-size: 3rem;
+    font-weight: 600;
+
+    &>p {
+      width: 20vw;
+      height: 10vh;
+      @include flexCenter(center, center);
+    }
+  }
+
+  &>div:nth-child(1)>p {
+    letter-spacing: 46px;
+  }
+
+  &>div:nth-child(2)>p {
+    letter-spacing: 34px;
+  }
+
+  &>div:nth-child(3)>p {
+    letter-spacing: 34px;
+  }
+
+  &>div:nth-child(4)>p {
+    letter-spacing: 34px;
+  }
+
+  &>div:nth-child(5)>p {
+    letter-spacing: 38px;
+  }
+}
+
+#colorInNewwave {
+  width: 100vw;
+  height: 40vh;
+  @include flexCenter(center, center);
+  transform: scale(2.6, 8);
+  letter-spacing: 3px;
+  color: #BB272D;
+}
+
+
+#newWave_color {
+  width: 100vw;
+  // height: 100vh;
+  display: flex;
+  @include flexCenter(center, center);
+
+  &>div:nth-child(1) {
+    width: 45vw;
+    height: 108vh;
+
+    display: flex;
+    flex-direction: column;
+
+    &>div {
+      width: 45vw;
+      height: 18vh;
+      @include flexCenter(center, center);
+      flex-direction: column;
+    }
+
+    &>div:nth-child(1) {
+      background-color: #BB272D;
+    }
+
+    &>div:nth-child(2) {
+      background-color: #E3DDCB;
+    }
+
+    &>div:nth-child(3) {
+      background-color: #3E465B;
+    }
+
+    &>div:nth-child(4) {
+      background-color: #245441;
+    }
+
+    &>div:nth-child(5) {
+      background-color: #6D1B43;
+    }
+
+    &>div:nth-child(6) {
+      background-color: #161616;
+    }
+  }
+
+  #colorImage {
+    width: 50vw;
+    height: 108vh;
+    background-color: #ccc;
+  }
+}
+
+#newWave_linearBgc {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(#ffffff, #252525);
+}
+
+
+#hanbok_legacy {
+  width: 100vw;
+  
+  background-color: #252525;
+  // @include flexCenter(center, center);
+  // position: relative;
+
+  &>div:nth-child(1) {
+    width: 78vw;
+    height: 20vh;
+    // border: 1px solid red;
+    color: #fff;
+    @include flexCenter(center, center);
+
+    &>p {
+      width: 70vw;
+      // height: 15vh;
+      @include flexCenter(flex-end, center);
+      font-weight: 500;
+      // transform: scale(8,8);
+      font-size: 8rem;
+      letter-spacing: 1.5px;
+    }
+  }
+
+  &>div:nth-child(2) {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+
+    &>div:nth-child(1){
+      width: 60vw;
+      height: 70vh;
+      @include flexCenter(flex-end, center);
+
+      &>div:nth-child(1) {
+        width: 50vw;
+        height: 70vh;
+        // border: 1px solid red;
+        @include flexCenter(space-around, center);
+        // border: 1px solid red;
+  
+        &>div:nth-child(1) {
+          width: 20vw;
+          height: 60vh;
+          @include flexCenter(center, center);
+          flex-direction: column;
+          background-color: #fff;
+          font-weight: 400;
+          font-size: 12px;
+          // border: 1px solid blue;
+        }
+  
+        &>div:nth-child(2) {
+          width: 20vw;
+          height: 60vh;
+          @include flexCenter(center, center);
+          flex-direction: column;
+          background-color: #fff;
+          font-weight: 400;
+          font-size: 12px;
+          // border: 1px solid red;
+        }
+      }
+    }
+
+    &>div:nth-child(2) {
+      width: 30vw;
+      height: 70vh;
+      @include flexCenter(center, center);
+      font-weight: 400;
+      color: #fff;
+      flex-direction: column;
+
+      &>div:nth-child(1) {
+        width: 20vw;
+        height: 10vh;
+        @include flexCenter(center, center);
+        // border: 1px solid blue;
+        font-size: 16px;
+        line-height: 45px;
+        // border: 1px solid red;
+
+      }
+
+      &>div:nth-child(2) {
+        width: 22vw;
+        height: 70vh;
+        font-size: 12px;
+        line-height: 35px;
+        // letter-spacing: 1px;
+        text-align: justify;
+
+
+        @include flexCenter(center, center);
+        // border: 1px solid blue;
+      }
+      #legacyMain_nav {
+        width: 22vw;
+        height: 10vh;
+        font-size: 16px;
+        font-weight: 500;
+        color: #fff;
+        @include flexCenter(flex-start, center);
+
+        &>div:nth-child(1) {
+          width: 10vw;
+          height: 10vh;
+          @include flexCenter(center, flex-start);
+          flex-direction: column;
+
+          &>div:nth-child(1) {
+            width: 5vw;
+            height: 5vh;
+            @include flexCenter(flex-start, center);
+          }
+
+          &>div:nth-child(2) {
+            width: 5vw;
+            height: 5vh;
+            @include flexCenter(flex-end, center);
+          }
+        }
+      }
+    }
+  }
+
+#hanbok_legacy_slide{
+  width: 100vw;
+  background-color: #252525;
+&>div:nth-child(1){
+  width: 100vw;
+  height: 60vh;
+  // background-color: #ccc;
+}
+}
+
+#hanbok_legacy_lastpage{
+  width: 100vw;
+  // height: 200vh;
+  @include flexCenter(center, center);
+  flex-direction: column;
+  
+  &>div:nth-child(1){
+    width: 80vw;
+    // height: 100vh;
+    // border: 1px solid red;
+    display: flex;
+    &>div:nth-child(1){
+      width: 40vw;
+      height: 80vh;
+      @include flexCenter(center, center);
+      flex-direction: column;
+      color: #fff;
+      font-size: 2rem;
+      font-weight: 700;
+
+      &>div:nth-child(1){
+        width: 25vw;
+        height: 60vh;
+        background-color: #ccc;
+      }
+      &>p{
+        width: 25vw;
+      }
+    }
+
+    &>div:nth-child(2){
+      width: 40vw;
+      height: 100vh;
+      @include flexCenter(flex-end, center);
+      flex-direction: column;
+      color: #fff;
+      font-size: 2rem;
+      font-weight: 700;
+
+      &>div:nth-child(1){
+        width: 25vw;
+        height: 60vh;
+        background-color: #ccc;
+      }
+      &>p{
+        width: 25vw;
+      }
+    }  
+  }
+  &>div:nth-child(2){
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    @include flexCenter(flex-start, center);
+
+    &>div:nth-child(1){
+      width: 60vw;
+      height: 60vh;
+      @include flexCenter(center, center);
+
+      &>div:nth-child(1){
+        width: 50vw;
+        height: 50vh;
+        background-color: #ccc;
+      }
+    }
+    &>div:nth-child(2){
+      width: 40vw;
+      height: 60vh;
+      // background-color: #245441;
+      @include flexCenter(flex-start, flex-end);
+      &>div:nth-child(1){
+        width: 25vw;
+        height: 13vh;
+        // border: 1px solid red;
+      @include flexCenter(flex-start, flex-start);
+
+      font-weight: 700;
+      color: #fff;
+      font-size: 2rem;
+      }
+    }
+  }
+}
+}

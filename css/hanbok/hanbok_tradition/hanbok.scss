@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin flexCenter($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/image/bg/hanbok_background.svg);
+  @include flexCenter(center, center);
+  overflow: hidden;
+
+  // background-image: url(/image/Toast\ Shiny\ Tulle\ Fabric\ 1.png);
+  // background-size: cover;
+  &>div:nth-child(1) {
+    width: 40vw;
+    height: 100vh;
+    // border: 1px solid red;  
+    @include flexCenter(center, center);
+    flex-direction: column;
+    position: relative;
+    top: 10vh;
+
+    #hourglass_top {
+      width: 0px;
+      height: 0px;
+      border-bottom: 400px solid #dfb7a6;
+      border-left: 200px solid transparent;
+      border-right: 200px solid transparent;
+      transform: rotate(180deg);
+      position: absolute;
+      top: 2vh;
+    }
+
+    #hourglass_bottom {
+      width: 0px;
+      height: 0px;
+      border-bottom: 400px solid #dfb7a6;
+      border-left: 200px solid transparent;
+      border-right: 200px solid transparent;
+    }
+  }
+
+  &>ul {
+    width: 40vw;
+    height: 5vh;
+    list-style-type: none;
+    @include flexCenter(space-around, center);
+    position: fixed;
+    left: -17vw;
+    transform: rotate(-90deg);
+    mix-blend-mode: difference;
+
+    &>li {
+      width: 13vw;
+      height: 5vh;
+      @include flexCenter(space-around, center);
+      font-weight: 800;
+
+
+    }
+  }
+}
+
+#title {
+  width: 30vw;
+  height: 20vh;
+  // border: 1px solid red;
+  @include flexCenter(center, center);
+  flex-direction: column;
+  position: absolute;
+  left: 35vw;
+
+  &>p {
+    height: 7vh;
+    font-size: 2.5rem;
+    font-weight: 800;
+  }
+}
+
+
+#hanbok_tradition {
+  width: 100vw;
+  overflow: hidden;
+
+  #containerOne {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    opacity: 0;
+    @include flexCenter(center, center);
+
+
+    &>div {
+      width: 50vw;
+      height: 80vh;
+      @include flexCenter(center, center);
+    }
+
+    &>div:nth-child(1) {
+      width: 50vw;
+      height: 80vh;
+
+      &>div:nth-child(1) {
+        width: 20vw;
+        height: 10vh;
+        position: absolute;
+        bottom: 70vh;
+        left: 10vw;
+
+        // border: 1px solid red;
+        &>div:nth-child(2) {
+          width: 50vw;
+          height: 50vh;
+          @include flexCenter(center, flex-end);
+        }
+      }
+    }
+
+    &>div:nth-child(2) {
+      width: 35vw;
+      height: 80vh;
+      @include flexCenter(center, flex-end);
+    }
+  }
+
+  #description_one {
+    width: 20vw;
+    height: 10vh;
+    position: absolute;
+    top: 75vh;
+
+    // left: 17vh;
+    // opacity: 0;
+    &>p {
+      height: 4vh;
+      font-weight: 200;
+      color: #868686;
+    }
+  }
+
+  &>div:nth-child(2) {
+    width: 100vw;
+    height: 50vh;
+    @include flexCenter(center, center);
+
+    &>span {
+      transform: scale(17, 20);
+      letter-spacing: 1px;
+      font-weight: 1000;
+      color: #fff;
+      position: relative;
+    }
+  }
+
+  .tradition::before {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #ebebf1;
+    width: 0%;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: 0.4s ease-out;
+  }
+
+  .tradition:hover::before {
+    width: 100%;
+  }
+
+
+  &>div:nth-child(3) {
+    width: 100vw;
+    // display: flex
+    // height: 100vh;
+    @include flexCenter(center, center);
+    opacity: 0;
+  }
+
+  #description_two {
+    width: 20vw;
+    position: absolute;
+    right: 20vw;
+    top: 325vh;
+    text-align: right;
+
+    &>p {
+      height: 4vh;
+      font-weight: 500;
+      line-height: 30px;
+      color: #868686;
+    }
+  }
+
+  #containerThree {
+    width: 100vw;
+    height: 150vh;
+    position: relative;
+    @include flexCenter(center, flex-end);
+    opacity: 0;
+
+    #description_three {
+      width: 40vw;
+      // height: 10vh;
+      // @include flexCenter(flex-start, flex-end);
+      font-weight: 540;
+      line-height: 30px;
+      position: absolute;
+      left: 14vw;
+      top: 20vh;
+      color: #868686;
+
+    }
+  }
+
+  &>div:nth-child(5) {
+    width: 100vw;
+    height: 150vh;
+    @include flexCenter(center, center);
+    // border: 1px solid red;
+    opacity: 0  ;
+
+    &>div {
+      width: 80vw;
+      height: 150vh;
+      @include flexCenter(center, center);
+    }
+    &>div:nth-child(1){
+      @include flexCenter(center, center);
+      
+    }
+    &>div:nth-child(2){
+      width: 80vw;
+      height: 100vh;
+      // border: 1px solid blue;
+      @include flexCenter(flex-start, flex-end);
+      &>div:nth-child(1){
+        
+      @include flexCenter(center, flex-end);
+
+      }
+    }
+  }
+}

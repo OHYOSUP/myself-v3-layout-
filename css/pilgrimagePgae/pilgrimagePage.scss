@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin flexCenter ($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+// .elementFadein{
+//   opacity: 1;
+//   transition: 0.5s;
+// }
+
+
+
+
+#main {
+  width: 100vw;
+  background-color: #2D2D2D;
+
+  overflow: hidden;
+  position: relative;
+  background-attachment: fixed;
+
+  &>div:nth-child(1) {
+    height: 100vh;
+    @include flexCenter(center, center);
+
+    &>h1 {
+      letter-spacing: 4px;
+      transform: scale(6, 11);
+      color: #BA3737;
+    }
+  }
+
+
+  nav {
+    width: 100vw;
+    height: 10vh;
+    @include flexCenter(space-around, center);
+    background-color: #2D2D2D;
+    position: fixed;
+    top: 0;
+    &>ul {
+      width: 100vw;
+      height: 15vh;
+      background-color: #373737;
+      @include flexCenter(space-around, center);
+      list-style-type: none;
+
+      &>li {
+        // width: 33vw;
+        // height: 15vh;
+        @include flexCenter(center, center);
+
+        color: #fff;
+        font-size: 2rem;
+        font-weight: 800;
+        letter-spacing: 5px;
+        transform: scale(2, 3.5);
+      }
+    }
+  }
+}
+
+#titleText{
+  
+  opacity: 1;
+}
+
+.fade{
+  opacity: 1;
+  transition: 0.7s ease;
+  transform: translateX(50px);
+  color: #BA3737;
+}
+
+
+
+
+#background {
+  width: 100vw;
+  background-color: #2D2D2D;
+  position: relative;
+
+  #pilgrimage_main {
+    width: 100vw;
+    height: 100vh;
+    // background-color: #ccc;
+  }
+
+  #actorTextBox {
+    width: 20vw;
+    height: 80vh;
+    position: absolute;
+    top: 100vh;
+    left: 5vw;
+    @include flexCenter(space-around, center);
+    flex-direction: column;
+
+
+    &>div:nth-child(1) {
+      width: 20vw;
+      height: 5vh;
+      @include flexCenter(center, center);
+
+      &>span {
+        color: #BA3737;
+        transform: scale(6, 10);
+        font-weight: 1000;
+        opacity: 0;
+
+      }
+    }
+
+    &>div:nth-child(2) {
+      width: 20vw;
+      height: 45vh;
+      @include flexCenter(space-around, center);
+      flex-direction: column;
+      // opacity: 0;
+      &>span {
+        height: 5vh;
+        transform: scale(2, 4);
+        letter-spacing: 2px;
+        color: #fff;
+        font-weight: 700;
+        opacity: 0;
+
+      }
+    }
+
+  }
+
+  #pilgrimage_pageTwo {
+    width: 100vw;
+    // height: 100vh;
+    @include flexCenter(flex-end, center);
+
+    &>div:nth-child(1) {
+      width: 70vw;
+      height: 150vh;
+
+      @include flexCenter(flex-end, center);
+      flex-direction: column;
+      &>div:nth-child(1){
+        opacity: 0;
+      }
+      &>div:nth-child(2) {
+        width: 45vw;
+        color: #fff;
+        font-size: 0.8rem;
+        line-height: 30px;
+        text-align: justify;
+        opacity: 0;
+      }
+    }
+  }
+
+  #indiText {
+      // width: 90vw;
+      font-size: 12rem;
+      color: #2D2D2D;
+      font-weight: 1000;
+      // transform: scale(12,25);
+      // opacity: 0;
+  }
+
+  .indiTextFade{
+    opacity: 1;
+    transition: 0.7s ease;
+    transform: translateX(50px);
+    color: #f3f3f3;
+
+  }
+  
+
+
+  #newsText {
+    width: 100vw;
+    height: 35vh;
+    z-index: 1;
+    position: relative;
+    @include flexCenter(flex-start, center);
+
+    &>span {
+      margin-left: 15vw;
+      transform: scale(12.5, 25);
+      color: #BA3737;
+      font-weight: 1000;
+    }
+  }
+
+  #newContainer {
+    width: 100vw;
+    height: 70vh;
+    z-index: 1;
+    position: relative;
+    @include flexCenter(space-around, center);
+    flex-direction: column;
+
+    &>div {
+      width: 90vw;
+      height: 15vh;
+      background-color: #595959;
+      border: 1px solid #fff;
+
+      color: #fff;
+      font-size: 2rem;
+      @include flexCenter(flex-start, center);
+      font-weight: 700;
+
+      &>p {
+        margin-left: 2vw;
+        letter-spacing: 2px;
+      }
+    }
+  }
+
+  &>div:nth-child(7) {
+    position: absolute;
+    z-index: 0;
+    top: 340vh;
+    left: 10vw;
+  }
+
+
+  &>div:nth-child(8) {
+    position: absolute;
+    z-index: 0;
+    left: 56vw;
+    top: 422vh;
+
+    color: #BA3737;
+    transform: scale(10, 13);
+    font-weight: 800;
+  }
+
+  #pilgrimage_rising {
+    width: 100vw;
+    height: 130vh;
+    @include flexCenter(flex-end, center);
+    flex-direction: column;
+
+    &>div:nth-child(1) {
+      width: 90vw;
+      height: 80vh;
+      @include flexCenter(space-around, center);
+
+      &>div {
+        @include flexCenter(center, center);
+        flex-direction: column;
+
+        &>p {
+          height: 7vh;
+          color: #fff;
+          font-size: 2rem;
+          letter-spacing: 2px;
+        }
+      }
+    }
+  }
+}
+

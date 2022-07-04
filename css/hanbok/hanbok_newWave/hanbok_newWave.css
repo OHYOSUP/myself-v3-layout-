@@ -1,0 +1,356 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.colorName {
+  width: 5vw;
+  height: 15vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  transform: scale(5, 5);
+  font-weight: 1000;
+  mix-blend-mode: overlay;
+}
+
+.colorDescription {
+  width: 36vw;
+  height: 2vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: 600;
+  mix-blend-mode: overlay;
+}
+
+#hanbok_newWave_mainPage {
+  width: 100vw;
+  background-color: #565656;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#newWave_textbox {
+  width: 20vw;
+  height: 50vh;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+}
+#newWave_textbox > div {
+  width: 20vw;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: 600;
+}
+#newWave_textbox > div > p {
+  width: 20vw;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#newWave_textbox > div:nth-child(1) > p {
+  letter-spacing: 46px;
+}
+#newWave_textbox > div:nth-child(2) > p {
+  letter-spacing: 34px;
+}
+#newWave_textbox > div:nth-child(3) > p {
+  letter-spacing: 34px;
+}
+#newWave_textbox > div:nth-child(4) > p {
+  letter-spacing: 34px;
+}
+#newWave_textbox > div:nth-child(5) > p {
+  letter-spacing: 38px;
+}
+
+#colorInNewwave {
+  width: 100vw;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(2.6, 8);
+  letter-spacing: 3px;
+  color: #BB272D;
+}
+
+#newWave_color {
+  width: 100vw;
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#newWave_color > div:nth-child(1) {
+  width: 45vw;
+  height: 108vh;
+  display: flex;
+  flex-direction: column;
+}
+#newWave_color > div:nth-child(1) > div {
+  width: 45vw;
+  height: 18vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#newWave_color > div:nth-child(1) > div:nth-child(1) {
+  background-color: #BB272D;
+}
+#newWave_color > div:nth-child(1) > div:nth-child(2) {
+  background-color: #E3DDCB;
+}
+#newWave_color > div:nth-child(1) > div:nth-child(3) {
+  background-color: #3E465B;
+}
+#newWave_color > div:nth-child(1) > div:nth-child(4) {
+  background-color: #245441;
+}
+#newWave_color > div:nth-child(1) > div:nth-child(5) {
+  background-color: #6D1B43;
+}
+#newWave_color > div:nth-child(1) > div:nth-child(6) {
+  background-color: #161616;
+}
+#newWave_color #colorImage {
+  width: 50vw;
+  height: 108vh;
+  background-color: #ccc;
+}
+
+#newWave_linearBgc {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(#ffffff, #252525);
+}
+
+#hanbok_legacy {
+  width: 100vw;
+  background-color: #252525;
+}
+#hanbok_legacy > div:nth-child(1) {
+  width: 78vw;
+  height: 20vh;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#hanbok_legacy > div:nth-child(1) > p {
+  width: 70vw;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: 500;
+  font-size: 8rem;
+  letter-spacing: 1.5px;
+}
+#hanbok_legacy > div:nth-child(2) {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+#hanbok_legacy > div:nth-child(2) > div:nth-child(1) {
+  width: 60vw;
+  height: 70vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#hanbok_legacy > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) {
+  width: 50vw;
+  height: 70vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#hanbok_legacy > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) {
+  width: 20vw;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  font-weight: 400;
+  font-size: 12px;
+}
+#hanbok_legacy > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) {
+  width: 20vw;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  font-weight: 400;
+  font-size: 12px;
+}
+#hanbok_legacy > div:nth-child(2) > div:nth-child(2) {
+  width: 30vw;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  color: #fff;
+  flex-direction: column;
+}
+#hanbok_legacy > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) {
+  width: 20vw;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  line-height: 45px;
+}
+#hanbok_legacy > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) {
+  width: 22vw;
+  height: 70vh;
+  font-size: 12px;
+  line-height: 35px;
+  text-align: justify;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#hanbok_legacy > div:nth-child(2) > div:nth-child(2) #legacyMain_nav {
+  width: 22vw;
+  height: 10vh;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#hanbok_legacy > div:nth-child(2) > div:nth-child(2) #legacyMain_nav > div:nth-child(1) {
+  width: 10vw;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+#hanbok_legacy > div:nth-child(2) > div:nth-child(2) #legacyMain_nav > div:nth-child(1) > div:nth-child(1) {
+  width: 5vw;
+  height: 5vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#hanbok_legacy > div:nth-child(2) > div:nth-child(2) #legacyMain_nav > div:nth-child(1) > div:nth-child(2) {
+  width: 5vw;
+  height: 5vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#hanbok_legacy #hanbok_legacy_slide {
+  width: 100vw;
+  background-color: #252525;
+}
+#hanbok_legacy #hanbok_legacy_slide > div:nth-child(1) {
+  width: 100vw;
+  height: 60vh;
+}
+#hanbok_legacy #hanbok_legacy_lastpage {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#hanbok_legacy #hanbok_legacy_lastpage > div:nth-child(1) {
+  width: 80vw;
+  display: flex;
+}
+#hanbok_legacy #hanbok_legacy_lastpage > div:nth-child(1) > div:nth-child(1) {
+  width: 40vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+}
+#hanbok_legacy #hanbok_legacy_lastpage > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) {
+  width: 25vw;
+  height: 60vh;
+  background-color: #ccc;
+}
+#hanbok_legacy #hanbok_legacy_lastpage > div:nth-child(1) > div:nth-child(1) > p {
+  width: 25vw;
+}
+#hanbok_legacy #hanbok_legacy_lastpage > div:nth-child(1) > div:nth-child(2) {
+  width: 40vw;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+}
+#hanbok_legacy #hanbok_legacy_lastpage > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) {
+  width: 25vw;
+  height: 60vh;
+  background-color: #ccc;
+}
+#hanbok_legacy #hanbok_legacy_lastpage > div:nth-child(1) > div:nth-child(2) > p {
+  width: 25vw;
+}
+#hanbok_legacy #hanbok_legacy_lastpage > div:nth-child(2) {
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#hanbok_legacy #hanbok_legacy_lastpage > div:nth-child(2) > div:nth-child(1) {
+  width: 60vw;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#hanbok_legacy #hanbok_legacy_lastpage > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) {
+  width: 50vw;
+  height: 50vh;
+  background-color: #ccc;
+}
+#hanbok_legacy #hanbok_legacy_lastpage > div:nth-child(2) > div:nth-child(2) {
+  width: 40vw;
+  height: 60vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+#hanbok_legacy #hanbok_legacy_lastpage > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) {
+  width: 25vw;
+  height: 13vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-weight: 700;
+  color: #fff;
+  font-size: 2rem;
+}/*# sourceMappingURL=hanbok_newWave.css.map */
