@@ -5,13 +5,13 @@
 }
 
 .colorName {
-  width: 5vw;
+  width: 15vw;
   height: 15vh;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  transform: scale(5, 5);
   font-weight: 1000;
+  font-size: 3rem;
   mix-blend-mode: overlay;
 }
 
@@ -32,8 +32,7 @@
   justify-content: center;
   align-items: center;
 }
-
-#newWave_textbox {
+#hanbok_newWave_mainPage #newWave_textbox {
   width: 20vw;
   height: 50vh;
   position: absolute;
@@ -43,7 +42,7 @@
   flex-direction: column;
   color: #fff;
 }
-#newWave_textbox > div {
+#hanbok_newWave_mainPage #newWave_textbox > div {
   width: 20vw;
   height: 10vh;
   display: flex;
@@ -52,26 +51,26 @@
   font-size: 3rem;
   font-weight: 600;
 }
-#newWave_textbox > div > p {
+#hanbok_newWave_mainPage #newWave_textbox > div > p {
   width: 20vw;
   height: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#newWave_textbox > div:nth-child(1) > p {
+#hanbok_newWave_mainPage #newWave_textbox > div:nth-child(1) > p {
   letter-spacing: 46px;
 }
-#newWave_textbox > div:nth-child(2) > p {
+#hanbok_newWave_mainPage #newWave_textbox > div:nth-child(2) > p {
   letter-spacing: 34px;
 }
-#newWave_textbox > div:nth-child(3) > p {
+#hanbok_newWave_mainPage #newWave_textbox > div:nth-child(3) > p {
   letter-spacing: 34px;
 }
-#newWave_textbox > div:nth-child(4) > p {
+#hanbok_newWave_mainPage #newWave_textbox > div:nth-child(4) > p {
   letter-spacing: 34px;
 }
-#newWave_textbox > div:nth-child(5) > p {
+#hanbok_newWave_mainPage #newWave_textbox > div:nth-child(5) > p {
   letter-spacing: 38px;
 }
 
@@ -81,13 +80,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: scale(2.6, 8);
   letter-spacing: 3px;
   color: #BB272D;
 }
 
 #newWave_color {
   width: 100vw;
+  height: 100vh;
   display: flex;
   display: flex;
   justify-content: center;
@@ -95,13 +94,13 @@
 }
 #newWave_color > div:nth-child(1) {
   width: 45vw;
-  height: 108vh;
+  height: 90vh;
   display: flex;
   flex-direction: column;
 }
 #newWave_color > div:nth-child(1) > div {
   width: 45vw;
-  height: 18vh;
+  height: 15vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -126,9 +125,11 @@
   background-color: #161616;
 }
 #newWave_color #colorImage {
-  width: 50vw;
-  height: 108vh;
+  width: 40vw;
+  height: 90vh;
   background-color: #ccc;
+  transition: 0.5s;
+  overflow: hidden;
 }
 
 #newWave_linearBgc {
@@ -261,12 +262,16 @@
   align-items: center;
 }
 #hanbok_legacy #hanbok_legacy_slide {
-  width: 100vw;
+  width: 190vw;
   background-color: #252525;
 }
 #hanbok_legacy #hanbok_legacy_slide > div:nth-child(1) {
   width: 100vw;
   height: 60vh;
+  display: flex;
+}
+#hanbok_legacy #hanbok_legacy_slide > div:nth-child(1) > div {
+  margin-left: 10px;
 }
 #hanbok_legacy #hanbok_legacy_lastpage {
   width: 100vw;

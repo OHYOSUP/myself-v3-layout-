@@ -1,13 +1,19 @@
 import { nextPage, prevPage  } from "../javascript/pageScrollEvent/pageScrollEvent.js";
 import {scrollElemFadein} from "./Hanbok/hanbok_element_scroll_fadein.js"
 import { test } from "./Hanbok/test.js";
-
+import { colorChange } from "./Hanbok/newWave/hanbokNewwave-imageChange.js";
+import {legacySlide} from "./Hanbok/newWave/hanbokLegacyParallSlide.js"
 
 const root = document.getElementById('root');
 const containerOne = document.getElementById('containerOne');
 const containerTwo = document.getElementById('containerTwo');
 const description_one = document.getElementById('description_one');
 const hanbok_tradition = document.getElementById('hanbok_tradition');
+const newWave_color = document.getElementById('newWave_color');
+const colorContainer = document.querySelectorAll('.colorContainer');
+const colorImage = document.getElementById('colorImage');
+const hanbok_legacy_slide = document.getElementById('hanbok_legacy_slide');
+
 
 nextPage(root,'wheel', description_one);
 // scrollElemFadein(root,"",containerOne, 3);
@@ -81,6 +87,11 @@ hanbok_tradition.addEventListener('wheel', function (e) {
     }, 400);
   }
 });
+
+colorChange('mouseover');
+legacySlide(hanbok_legacy_slide, 'wheel');
+
+
 
 
 // hanbok_tradition.addEventListener('wheel', ()=>{

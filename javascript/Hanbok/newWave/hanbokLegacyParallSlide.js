@@ -27,12 +27,12 @@ export function legacySlide(targetElem, eventType){
 
 function legacyBgSlide() {
   requestAnimationFrame(legacyBgSlide);
-  if (i < 800 && isStatus === true) {
+  if (i < 1300 && isStatus === true) {
     i++;
-    console.log(i);
+    // console.log(i);
     hanbok_legacy_slide.style.transform = `translateX(${-i}px)`;
-    if (i >= 800) {
-      i = 800
+    if (i >= 1300) {
+      i = 1300
     }
   }
 };
@@ -40,7 +40,7 @@ function legacyBgSlide() {
 function legacyBgSlideOpposite() {
   requestAnimationFrame(legacyBgSlideOpposite);
   i--;
-  console.log(i);
+  // console.log(i);
   hanbok_legacy_slide.style.transform = `translateX(${-i}px)`;
   if (i <= 0) {
     i = 0;

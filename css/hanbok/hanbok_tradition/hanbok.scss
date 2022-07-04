@@ -96,56 +96,61 @@
     display: flex;
     position: relative;
     opacity: 0;
+    // background-color: #ccc;
     @include flexCenter(center, center);
+    border: 1px solid red;
 
-
-    &>div {
+    &>div{
       width: 50vw;
       height: 80vh;
       @include flexCenter(center, center);
+      border: 1px solid red;
     }
 
     &>div:nth-child(1) {
       width: 50vw;
-      height: 80vh;
+      height: 100vh;
+      @include flexCenter(center, space-around);
+      
+      border: 1px solid red;
 
-      &>div:nth-child(1) {
+      #description_one {
         width: 20vw;
         height: 10vh;
         position: absolute;
-        bottom: 70vh;
-        left: 10vw;
-
-        // border: 1px solid red;
-        &>div:nth-child(2) {
-          width: 50vw;
-          height: 50vh;
-          @include flexCenter(center, flex-end);
+        bottom: 20vh;
+        left: 5vw;
+        border: 1px solid blue;
+        &>p {
+          height: 4vh;
+          font-weight: 200;
+          color: #868686;
         }
+      }
+      &>div:nth-child(2) {
+        width: 30vw;
+        height: 60vh;
+        background-color: #222;
+
+        @include flexCenter(center, flex-end);
       }
     }
 
     &>div:nth-child(2) {
-      width: 35vw;
+      width: 50vw;
       height: 80vh;
-      @include flexCenter(center, flex-end);
+      @include flexCenter(center, center);
+      background-color: #ccc;
+
+      &>div:nth-child(1){
+        width: 35vw;
+        height: 60vh;
+      background-color: #222;
+
+      }
     }
   }
 
-  #description_one {
-    width: 20vw;
-    height: 10vh;
-    position: absolute;
-    top: 75vh;
-
-    // left: 17vh;
-    // opacity: 0;
-    &>p {
-      height: 4vh;
-      font-weight: 200;
-      color: #868686;
-    }
-  }
 
   &>div:nth-child(2) {
     width: 100vw;
@@ -183,51 +188,67 @@
     // display: flex
     // height: 100vh;
     @include flexCenter(center, center);
-    opacity: 0;
+    // opacity: 0;
   }
 
-  #description_two {
-    width: 20vw;
-    position: absolute;
-    right: 20vw;
-    top: 325vh;
-    text-align: right;
 
-    &>p {
-      height: 4vh;
-      font-weight: 500;
-      line-height: 30px;
-      color: #868686;
+  #containerTwo{
+    width: 100vw;
+    height: 100vh;
+    @include flexCenter(center, center);
+    opacity: 0;
+    &>div:nth-child(1){
+      width: 30vw;
+      height: 70vh;
+      background-color: #ccc;
+    }
+
+    #description_two {
+      width: 20vw;
+      position: absolute;
+      right: 20vw;
+      top: 325vh;
+      text-align: right;
+  
+      &>p {
+        height: 4vh;
+        font-weight: 500;
+        line-height: 30px;
+        color: #868686;
+      }
     }
   }
+
 
   #containerThree {
     width: 100vw;
     height: 150vh;
     position: relative;
-    @include flexCenter(center, flex-end);
+    @include flexCenter(center, center);
     opacity: 0;
-
+    border: 1px solid red;
     #description_three {
       width: 40vw;
-      // height: 10vh;
-      // @include flexCenter(flex-start, flex-end);
       font-weight: 540;
       line-height: 30px;
       position: absolute;
       left: 14vw;
-      top: 20vh;
+      top: 30vh;
       color: #868686;
-
+    }
+    &>div:nth-child(2){
+      width: 50vw;
+      height: 100vh;
+      background-color: #ccc;
     }
   }
 
-  &>div:nth-child(5) {
+  #containerFour {
     width: 100vw;
     height: 150vh;
     @include flexCenter(center, center);
-    // border: 1px solid red;
-    opacity: 0  ;
+    opacity: 0;
+    border: 1px solid red;
 
     &>div {
       width: 80vw;
@@ -236,17 +257,25 @@
     }
     &>div:nth-child(1){
       @include flexCenter(center, center);
-      
+      background-color: #ccc;
+      &>div:nth-child(1){
+        width: 20vw;
+        height: 60vh;
+        background-color: #222;
+      }
     }
     &>div:nth-child(2){
       width: 80vw;
       height: 100vh;
-      // border: 1px solid blue;
-      @include flexCenter(flex-start, flex-end);
-      &>div:nth-child(1){
-        
-      @include flexCenter(center, flex-end);
+      border: 1px solid blue;
+      background-color: #ccc;
 
+      @include flexCenter(center, center);
+      &>div:nth-child(1){
+        width: 20vw;
+        height: 60vh;
+        background-color: #222;
+      // @include flexCenter(center, flex-end);
       }
     }
   }
