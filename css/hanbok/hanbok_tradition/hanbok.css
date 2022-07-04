@@ -90,7 +90,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid red;
 }
 #hanbok_tradition #containerOne > div {
   width: 50vw;
@@ -98,7 +97,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid red;
 }
 #hanbok_tradition #containerOne > div:nth-child(1) {
   width: 50vw;
@@ -106,7 +104,6 @@
   display: flex;
   justify-content: center;
   align-items: space-around;
-  border: 1px solid red;
 }
 #hanbok_tradition #containerOne > div:nth-child(1) #description_one {
   width: 20vw;
@@ -114,17 +111,14 @@
   position: absolute;
   bottom: 20vh;
   left: 5vw;
-  border: 1px solid blue;
 }
 #hanbok_tradition #containerOne > div:nth-child(1) #description_one > p {
   height: 4vh;
   font-weight: 200;
-  color: #868686;
 }
 #hanbok_tradition #containerOne > div:nth-child(1) > div:nth-child(2) {
   width: 30vw;
   height: 60vh;
-  background-color: #222;
   display: flex;
   justify-content: center;
   align-items: flex-end;

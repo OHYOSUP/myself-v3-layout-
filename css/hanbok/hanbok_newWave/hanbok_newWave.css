@@ -302,6 +302,7 @@
 }
 #hanbok_legacy #hanbok_legacy_lastpage > div:nth-child(1) > div:nth-child(1) > p {
   width: 25vw;
+  opacity: 0;
 }
 #hanbok_legacy #hanbok_legacy_lastpage > div:nth-child(1) > div:nth-child(2) {
   width: 40vw;
@@ -321,6 +322,7 @@
 }
 #hanbok_legacy #hanbok_legacy_lastpage > div:nth-child(1) > div:nth-child(2) > p {
   width: 25vw;
+  opacity: 0;
 }
 #hanbok_legacy #hanbok_legacy_lastpage > div:nth-child(2) {
   width: 100vw;

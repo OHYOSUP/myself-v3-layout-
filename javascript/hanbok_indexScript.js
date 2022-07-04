@@ -1,18 +1,34 @@
 import { nextPage, prevPage  } from "../javascript/pageScrollEvent/pageScrollEvent.js";
 import {scrollElemFadein} from "./Hanbok/hanbok_element_scroll_fadein.js"
-import { test } from "./Hanbok/test.js";
+import { elementFade } from "./Hanbok/elementFade.js";
 import { colorChange } from "./Hanbok/newWave/hanbokNewwave-imageChange.js";
 import {legacySlide} from "./Hanbok/newWave/hanbokLegacyParallSlide.js"
+import { mouseoverEvent, mouseoutEvent } from "./Hanbok/legacy/hanbok_legacy_mouseoverEvent.js";
+
 
 const root = document.getElementById('root');
 const containerOne = document.getElementById('containerOne');
 const containerTwo = document.getElementById('containerTwo');
+const containerThree = document.getElementById('containerThree');
+const containerFour = document.getElementById('containerFour');
 const description_one = document.getElementById('description_one');
 const hanbok_tradition = document.getElementById('hanbok_tradition');
 const newWave_color = document.getElementById('newWave_color');
 const colorContainer = document.querySelectorAll('.colorContainer');
 const colorImage = document.getElementById('colorImage');
 const hanbok_legacy_slide = document.getElementById('hanbok_legacy_slide');
+const hanbok_legacy_lastpage = document.getElementById('hanbok_legacy_lastpage');
+const image = document.querySelectorAll('.lastPage_image');
+const imageName = document.querySelectorAll('.imageName');
+
+const lastPage_images = Array.from(image);
+const lastPage_imageName = Array.from(imageName);
+
+
+
+mouseoverEvent(lastPage_images);
+mouseoutEvent(lastPage_images);
+
 
 
 nextPage(root,'wheel', description_one);
@@ -22,31 +38,39 @@ nextPage(root,'wheel', description_one);
 
 
 
-test(hanbok_tradition);
+elementFade(hanbok_tradition);
 
 
 
 const container = document.querySelectorAll('.container');
-
 const containerArr = Array.from(container);
 // const objectContainerArr = Object.assign({}, containerArr);
 // console.log(objectContainerArr);
 
-console.log(containerArr);
+// console.log(containerArr);
 
 
 
-let  i = -1;
+let i = -1;
 
 function indexCheck(){
-  // index++;
+
   i++;
+
   if(i >= 3){
-    i=3;  
+    i = 3;  
   }
-  console.log(i);
+  // console.log(i);
 }
 
+function indexCheckOpposite(){
+
+  i--;
+  if(i <= 0){
+    i = 0;  
+  }
+  // console.log(i);
+}
 
 function boxVisible(){
 containerArr[i].style.opacity = 1;
@@ -56,6 +80,8 @@ function boxInVisible(){
   containerArr[i].style.opacity = 0;
   containerArr[i].style.transition = '0.5s';
   }
+
+
 // function nextElem(elem){
 //   elem[i].scrollIntoView({top : 300, left: 0, behavior: "smooth"});
 // }
@@ -70,21 +96,28 @@ hanbok_tradition.addEventListener('wheel', function (e) {
       timer = null;
       indexCheck();
       if(e.deltaY > 0){
-        // nextElem(containerArr[i]);
+        // console.log(e.deltaY);
+        console.log(i);
+        nextPage(containerOne, 'wheel', containerTwo);
+        nextPage(containerTwo, 'wheel', containerThree);
+        nextPage(containerThree, 'wheel', containerFour);
         boxVisible(containerArr[i]);
       }
-    }, 400);
-  }
-  if (!timer) {
+    }, 300);
+  }if (timer) {
     timer = setTimeout(function() {
       timer = null;
-      indexCheck();
+      indexCheckOpposite();
       if(e.deltaY < 0){
-        i--;
-        // nextElem(containerArr[i]);
+        // console.log(e.deltaY);
+        console.log(i);
+        prevPage(containerOne, 'wheel', root);
+        prevPage(containerTwo, 'wheel', containerOne);
+        prevPage(containerThree, 'wheel', containerTwo);
+        prevPage(containerFour, 'wheel', containerThree);
         boxInVisible(containerArr[i]);
       }
-    }, 400);
+    }, 300);
   }
 });
 

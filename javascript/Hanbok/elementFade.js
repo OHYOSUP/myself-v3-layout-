@@ -9,7 +9,7 @@ function ElementEvent (){
 }
 
 
-export function test(elem){
+export function elementFade(elem){
   let timer;
 
   hanbok_tradition.addEventListener('wheel', function (e) {
@@ -21,6 +21,6 @@ export function test(elem){
     }
   });
 }
-
+  
 
 

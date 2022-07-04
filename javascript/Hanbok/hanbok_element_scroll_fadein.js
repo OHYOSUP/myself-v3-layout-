@@ -2,7 +2,7 @@ const imageBox = document.getElementById('imageBox');
 
 
 let posY = 0;
-let i = 0;
+
 
 function scrollDownEvent() {
   window.scrollBy({

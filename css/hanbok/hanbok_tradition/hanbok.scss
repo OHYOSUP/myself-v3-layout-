@@ -98,13 +98,13 @@
     opacity: 0;
     // background-color: #ccc;
     @include flexCenter(center, center);
-    border: 1px solid red;
+    // border: 1px solid red;
 
     &>div{
       width: 50vw;
       height: 80vh;
       @include flexCenter(center, center);
-      border: 1px solid red;
+      // border: 1px solid red;
     }
 
     &>div:nth-child(1) {
@@ -112,7 +112,7 @@
       height: 100vh;
       @include flexCenter(center, space-around);
       
-      border: 1px solid red;
+      // border: 1px solid red;
 
       #description_one {
         width: 20vw;
@@ -120,17 +120,17 @@
         position: absolute;
         bottom: 20vh;
         left: 5vw;
-        border: 1px solid blue;
+        // border: 1px solid blue;
         &>p {
           height: 4vh;
           font-weight: 200;
-          color: #868686;
+          // color: #868686;
         }
       }
       &>div:nth-child(2) {
         width: 30vw;
         height: 60vh;
-        background-color: #222;
+        // background-color: #222;
 
         @include flexCenter(center, flex-end);
       }
