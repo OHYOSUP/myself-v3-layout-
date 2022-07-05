@@ -4,7 +4,7 @@ import {scrollArrElemFadein} from "./element-scroll-fadein/arrElment-scroll-fade
 import { scrollElemFadein } from "./element-scroll-fadein/element-scroll-fadein.js";
 import { indiTextFade, indiTextStyle } from "./pilgrimage-indiText-fadein/pilgrimage_indiText-fadein.js";
 import { scrollFunctionFadein } from "./element-scroll-fadein/function-scroll-fadein.js";
-
+import { pilgrimage_naviEvent } from "./pilgrimage_naviEvent/hanbok_navigation.js";
 
 const main = document.getElementById('main');
 const background = document.getElementById('background');
@@ -12,7 +12,7 @@ const pilgrimage_main = document.getElementById('pilgrimage_main');
 const imageBox = document.getElementById('imageBox');
 const imageDescription = document.getElementById('imageDescription');
 
-
+pilgrimage_naviEvent('click');
 
 nextPage(main, 'wheel', pilgrimage_main)
 

@@ -34,7 +34,7 @@ export function scrollElemFadein(pageName, elem, targetElem, yValue) {
       if (posY >= 150) {
         posY = 150;
       }
-      console.log(posY);
+      // console.log(posY);
     }
     if (e.deltaY < 0) {
       scrollUpEvent();

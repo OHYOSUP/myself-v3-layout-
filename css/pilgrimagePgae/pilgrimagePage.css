@@ -9,6 +9,7 @@
   background-color: #2D2D2D;
   overflow: hidden;
   position: relative;
+  z-index: 101;
   background-attachment: fixed;
 }
 #main > div:nth-child(1) {
@@ -31,6 +32,7 @@
   background-color: #2D2D2D;
   position: fixed;
   top: 0;
+  z-index: 100;
 }
 #main nav > ul {
   width: 100vw;
@@ -67,10 +69,12 @@
   width: 100vw;
   background-color: #2D2D2D;
   position: relative;
+  z-index: 101;
 }
 #background #pilgrimage_main {
   width: 100vw;
   height: 100vh;
+  z-index: 100;
 }
 #background #actorTextBox {
   width: 20vw;
@@ -190,23 +194,26 @@
   letter-spacing: 2px;
 }
 #background > div:nth-child(7) {
-  position: absolute;
-  z-index: 0;
-  top: 340vh;
-  left: 10vw;
-}
-#background > div:nth-child(8) {
-  position: absolute;
-  z-index: 0;
-  left: 56vw;
-  top: 422vh;
+  width: 100vw;
+  height: 30vh;
+  z-index: 10;
+  font-size: 10rem;
   color: #BA3737;
-  transform: scale(10, 13);
   font-weight: 800;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#background > div:nth-child(7) > div:nth-child(1) {
+  width: 45vw;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #background #pilgrimage_rising {
   width: 100vw;
-  height: 130vh;
+  height: 80vh;
   display: flex;
   justify-content: flex-end;
   align-items: center;

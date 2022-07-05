@@ -21,9 +21,9 @@
 #main {
   width: 100vw;
   background-color: #2D2D2D;
-
   overflow: hidden;
   position: relative;
+  z-index: 101;
   background-attachment: fixed;
 
   &>div:nth-child(1) {
@@ -45,6 +45,7 @@
     background-color: #2D2D2D;
     position: fixed;
     top: 0;
+    z-index: 100;
     &>ul {
       width: 100vw;
       height: 15vh;
@@ -86,11 +87,14 @@
   width: 100vw;
   background-color: #2D2D2D;
   position: relative;
+  z-index: 101;
 
   #pilgrimage_main {
     width: 100vw;
     height: 100vh;
     // background-color: #ccc;
+  z-index: 100;
+
   }
 
   #actorTextBox {
@@ -221,28 +225,31 @@
     }
   }
 
+
+
   &>div:nth-child(7) {
-    position: absolute;
-    z-index: 0;
-    top: 340vh;
-    left: 10vw;
-  }
-
-
-  &>div:nth-child(8) {
-    position: absolute;
-    z-index: 0;
-    left: 56vw;
-    top: 422vh;
-
+    width: 100vw;
+    height: 30vh;
+    // position: absolute;
+    z-index: 10;
+    // left: 56vw;
+    // top: 422vh;
+    font-size: 10rem;
     color: #BA3737;
-    transform: scale(10, 13);
     font-weight: 800;
+    @include flexCenter(flex-start, center);
+
+    &>div:nth-child(1){
+      width: 45vw;
+      height: 20vh;
+      @include flexCenter(center, center);
+      // border: 1px solid red;
+    }
   }
 
   #pilgrimage_rising {
     width: 100vw;
-    height: 130vh;
+    height: 80vh;
     @include flexCenter(flex-end, center);
     flex-direction: column;
 
