@@ -26,6 +26,7 @@
     @include flexCenter(center, center);
     flex-direction: column;
     position: relative;
+    z-index: 0;
     top: 10vh;
 
     #hourglass_top {
@@ -54,6 +55,7 @@
     list-style-type: none;
     @include flexCenter(space-around, center);
     position: fixed;
+    z-index: 100;
     left: -17vw;
     transform: rotate(-90deg);
     mix-blend-mode: difference;
@@ -89,6 +91,7 @@
 #hanbok_tradition {
   width: 100vw;
   overflow: hidden;
+  z-index: 0;
 
   #containerOne {
     width: 100vw;
@@ -96,11 +99,12 @@
     display: flex;
     position: relative;
     opacity: 0;
+    z-index: 0;
     // background-color: #ccc;
     @include flexCenter(center, center);
     // border: 1px solid red;
 
-    &>div{
+    &>div {
       width: 50vw;
       height: 80vh;
       @include flexCenter(center, center);
@@ -109,9 +113,9 @@
 
     &>div:nth-child(1) {
       width: 50vw;
-      height: 100vh;
+      // height: 100vh;
       @include flexCenter(center, space-around);
-      
+
       // border: 1px solid red;
 
       #description_one {
@@ -120,6 +124,7 @@
         position: absolute;
         bottom: 20vh;
         left: 5vw;
+
         // border: 1px solid blue;
         &>p {
           height: 4vh;
@@ -127,6 +132,7 @@
           // color: #868686;
         }
       }
+
       &>div:nth-child(2) {
         width: 30vw;
         height: 60vh;
@@ -137,15 +143,15 @@
     }
 
     &>div:nth-child(2) {
-      width: 50vw;
-      height: 80vh;
+      width: 30vw;
+      // height: 80vh;
       @include flexCenter(center, center);
-      background-color: #ccc;
+      // background-color: #ccc;
 
-      &>div:nth-child(1){
+      &>div:nth-child(1) {
         width: 35vw;
         height: 60vh;
-      background-color: #222;
+        // background-color: #222;
 
       }
     }
@@ -192,15 +198,16 @@
   }
 
 
-  #containerTwo{
+  #containerTwo {
     width: 100vw;
     height: 100vh;
     @include flexCenter(center, center);
     opacity: 0;
-    &>div:nth-child(1){
+
+    &>div:nth-child(1) {
       width: 30vw;
       height: 70vh;
-      background-color: #ccc;
+      // background-color: #ccc;
     }
 
     #description_two {
@@ -209,12 +216,12 @@
       right: 20vw;
       top: 325vh;
       text-align: right;
-  
+
       &>p {
         height: 4vh;
         font-weight: 500;
         line-height: 30px;
-        color: #868686;
+        // color: #868686;
       }
     }
   }
@@ -222,11 +229,12 @@
 
   #containerThree {
     width: 100vw;
-    height: 150vh;
+    height: 110vh;
     position: relative;
     @include flexCenter(center, center);
     opacity: 0;
-    border: 1px solid red;
+
+    // border: 1px solid red;
     #description_three {
       width: 40vw;
       font-weight: 540;
@@ -234,48 +242,55 @@
       position: absolute;
       left: 14vw;
       top: 30vh;
-      color: #868686;
+      // color: #868686;
     }
-    &>div:nth-child(2){
+
+    &>div:nth-child(2) {
       width: 50vw;
       height: 100vh;
-      background-color: #ccc;
+      // background-color: #ccc;
     }
   }
 
   #containerFour {
     width: 100vw;
-    height: 150vh;
+    height: 100vh;
     @include flexCenter(center, center);
     opacity: 0;
-    border: 1px solid red;
+    // border: 1px solid red;
 
     &>div {
       width: 80vw;
       height: 150vh;
       @include flexCenter(center, center);
     }
-    &>div:nth-child(1){
-      @include flexCenter(center, center);
-      background-color: #ccc;
-      &>div:nth-child(1){
-        width: 20vw;
+
+    &>div:nth-child(1) {
+      width: 50vw;
+      @include flexCenter(flex-end, center);
+
+      // background-color: #ccc;
+      &>div:nth-child(1) {
+        @include flexCenter(center, center);
+        width: 50vw;
         height: 60vh;
-        background-color: #222;
+        // background-color: #222;
       }
     }
-    &>div:nth-child(2){
-      width: 80vw;
-      height: 100vh;
-      border: 1px solid blue;
-      background-color: #ccc;
 
+    &>div:nth-child(2) {
+      width: 50vw;
+      height: 100vh;
+      // border: 1px solid blue;
+      // background-color: #ccc;
       @include flexCenter(center, center);
-      &>div:nth-child(1){
-        width: 20vw;
+
+      &>div:nth-child(1) {
+        @include flexCenter(center, center);
+        width: 50vw;
         height: 60vh;
-        background-color: #222;
-      // @include flexCenter(center, flex-end);
+        // background-color: #222;
+        // @include flexCenter(center, flex-end);
       }
     }
   }

@@ -21,6 +21,7 @@
   align-items: center;
   flex-direction: column;
   position: relative;
+  z-index: 0;
   top: 10vh;
 }
 #root > div:nth-child(1) #hourglass_top {
@@ -48,6 +49,7 @@
   justify-content: space-around;
   align-items: center;
   position: fixed;
+  z-index: 100;
   left: -17vw;
   transform: rotate(-90deg);
   mix-blend-mode: difference;
@@ -80,6 +82,7 @@
 #hanbok_tradition {
   width: 100vw;
   overflow: hidden;
+  z-index: 0;
 }
 #hanbok_tradition #containerOne {
   width: 100vw;
@@ -87,6 +90,7 @@
   display: flex;
   position: relative;
   opacity: 0;
+  z-index: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -100,7 +104,6 @@
 }
 #hanbok_tradition #containerOne > div:nth-child(1) {
   width: 50vw;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: space-around;
@@ -124,17 +127,14 @@
   align-items: flex-end;
 }
 #hanbok_tradition #containerOne > div:nth-child(2) {
-  width: 50vw;
-  height: 80vh;
+  width: 30vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ccc;
 }
 #hanbok_tradition #containerOne > div:nth-child(2) > div:nth-child(1) {
   width: 35vw;
   height: 60vh;
-  background-color: #222;
 }
 #hanbok_tradition > div:nth-child(2) {
   width: 100vw;
@@ -181,7 +181,6 @@
 #hanbok_tradition #containerTwo > div:nth-child(1) {
   width: 30vw;
   height: 70vh;
-  background-color: #ccc;
 }
 #hanbok_tradition #containerTwo #description_two {
   width: 20vw;
@@ -194,17 +193,15 @@
   height: 4vh;
   font-weight: 500;
   line-height: 30px;
-  color: #868686;
 }
 #hanbok_tradition #containerThree {
   width: 100vw;
-  height: 150vh;
+  height: 110vh;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   opacity: 0;
-  border: 1px solid red;
 }
 #hanbok_tradition #containerThree #description_three {
   width: 40vw;
@@ -213,21 +210,18 @@
   position: absolute;
   left: 14vw;
   top: 30vh;
-  color: #868686;
 }
 #hanbok_tradition #containerThree > div:nth-child(2) {
   width: 50vw;
   height: 100vh;
-  background-color: #ccc;
 }
 #hanbok_tradition #containerFour {
   width: 100vw;
-  height: 150vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   opacity: 0;
-  border: 1px solid red;
 }
 #hanbok_tradition #containerFour > div {
   width: 80vw;
@@ -237,27 +231,29 @@
   align-items: center;
 }
 #hanbok_tradition #containerFour > div:nth-child(1) {
+  width: 50vw;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#hanbok_tradition #containerFour > div:nth-child(1) > div:nth-child(1) {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ccc;
-}
-#hanbok_tradition #containerFour > div:nth-child(1) > div:nth-child(1) {
-  width: 20vw;
+  width: 50vw;
   height: 60vh;
-  background-color: #222;
 }
 #hanbok_tradition #containerFour > div:nth-child(2) {
-  width: 80vw;
+  width: 50vw;
   height: 100vh;
-  border: 1px solid blue;
-  background-color: #ccc;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 #hanbok_tradition #containerFour > div:nth-child(2) > div:nth-child(1) {
-  width: 20vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
   height: 60vh;
-  background-color: #222;
 }/*# sourceMappingURL=hanbok.css.map */

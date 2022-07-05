@@ -1,26 +1,82 @@
-const root = document.getElementById('root');
-const box = document.querySelectorAll('#root>div');
-const nextBtn = document.getElementById('next');
-const prevBtn = document.getElementById('prev');
+const slide = document.querySelector('.slide');
+const slideImg = document.querySelectorAll('.slide li');
+const prev = document.getElementById('prevBtn');
+const next = document.getElementById('nextBtn');
 
+// console.log(prev);
 
+let currentIndex = 0;
+let slideCount = slideImg.length;
+console.log(slideImg);
 
-const boxArr = Array.from(box);
-// console.log(boxArr);
+let slideWidth = 532;
+let slideMargin = 50;
 
-let newArr = [boxArr];
+function makeClone(){
+  let cloneSlide_first = slideImg[0].cloneNode(true);
+  let cloneSlide_last = slide.lastElementChild.cloneNode(true);
+  slide.append(cloneSlide_first);
+  slide.insertBefore(cloneSlide_last, slide.firstElementChild);
+}
 
-let nextImage = boxArr.shift();
+function initfunction(){
+  slide.style.widht = slideWidth * (slideCount + 1) + 'px';
+  slide.style.left = -slideWidth + 'px';
+}
 
-console.log(nextImage);
+makeClone();
+initfunction();
 
+export function legacyMainSlideNext (eventType){
 
-
-
-  nextBtn.addEventListener('click', ()=>{
-    boxArr.push(nextImage);
-    // console.log(nextImage);
-    
-    console.log(boxArr);
+  next.addEventListener(eventType, function(){
+  if(currentIndex < slideCount - 1 ){
+    console.log(currentIndex);
+  
+    slide.style.left = -(currentIndex + 2) * (slideMargin + slideWidth) + 'px';
+    slide.style.transition = `${0.5}s ease-out`;
+  }
+  if(currentIndex === slideCount-1){
+    console.log(currentIndex);
+  
+    setTimeout(function(){
+      slide.style.left = -(slideMargin + slideWidth) + 'px';
+      slide.style.transition = `${0}s ease-out`;
+    },200);
+    currentIndex = -1;
+  }
+  currentIndex += 1;
   });
+}
 
+
+export function legacyMainSlidePrev(eventType){
+
+  prev.addEventListener(eventType, function(){
+    if(currentIndex > 0){
+      slide.style.left = -currentIndex * (slideMargin + slideWidth) + 'px';
+      slide.style.transition = `${0.5}s ease-out`
+      console.log(currentIndex);
+    }
+    if(currentIndex === 0){
+      console.log(currentIndex);
+  
+      setTimeout(function(){
+        slide.style.left = -slideCount * (slideMargin + slideWidth) + 'px';
+        slide.style.transition = `${0}s ease-out`;
+      },200);
+      currentIndex = slideCount;
+    }
+    currentIndex -= 1;
+  })
+}
+
+
+
+
+
+
+
+
+
+// https://eunhee-programming.tistory.com/166

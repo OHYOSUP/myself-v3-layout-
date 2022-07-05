@@ -185,28 +185,33 @@
     height: 100vh;
     display: flex;
 
-    &>div:nth-child(1) {
+    #legacyMainContainer{
       width: 60vw;
       height: 70vh;
       @include flexCenter(flex-end, center);
+      // border: 1px solid red;
+      position: relative;
+      overflow: hidden;
 
-      &>div:nth-child(1) {
-        width: 50vw;
-        height: 70vh;
-        // border: 1px solid red;
-        @include flexCenter(space-around, center);
-        // border: 1px solid red;
+          &>ul{
+            width: 245vw;
+            height: 723px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            // border: 1px solid red;
+            /* margin : 50px; */
+            overflow: hidden;
+            transition: 0.5 ease-out;
 
-        #legacyLastPage_frameOne {
-          width: 30vw;
-          height: 70vh;
-          @include flexCenter(center, center);
-          flex-direction: column;
-          background-color: #fff;
-          font-weight: 400;
-          font-size: 12px;
-          // border: 1px solid blue;
-        }
+            display: flex;
+            // border: 1px salmon;
+
+            &>li{
+              width: 30vw;
+              // height: 723px;
+              margin-right: 50px;
+            }
       }
     }
 
@@ -277,15 +282,15 @@
     background-color: #252525;
 
     &>div:nth-child(1) {
-      width: 100vw;
-      height: 60vh;
+      width: 150vw;
+      height: 55vh;
       display: flex;
-
+      overflow: hidden;
       &>div {
+        // height: 60vh;
         margin-left: 10px;
+        overflow: hidden;
       }
-
-      // background-color: #ccc;
     }
   }
 
@@ -303,7 +308,7 @@
 
       &>div:nth-child(1) {
         width: 40vw;
-        height: 80vh;
+        height: 100vh;
         @include flexCenter(center, center);
         flex-direction: column;
         color: #fff;
@@ -312,12 +317,13 @@
 
         &>div:nth-child(1) {
           width: 25vw;
-          height: 60vh;
-          background-color: #ccc;
+          // height: 56vh;
+          // background-color: #ccc;
         }
 
         &>p {
           width: 25vw;
+          height: 5vh;
           opacity: 0;
         }
       }
@@ -333,8 +339,8 @@
 
         &>div:nth-child(1) {
           width: 25vw;
-          height: 60vh;
-          background-color: #ccc;
+          // height: 60vh;
+          // background-color: #ccc;
         }
 
         &>p {
@@ -350,16 +356,19 @@
       height: 70vh;
       display: flex;
       @include flexCenter(flex-start, center);
+      // border: 1px solid blue;
 
       &>div:nth-child(1) {
-        width: 60vw;
+        width: 50vw;
         height: 60vh;
         @include flexCenter(center, center);
-
+        // border: 1px solid red;
         &>div:nth-child(1) {
-          width: 50vw;
-          height: 50vh;
-          background-color: #ccc;
+          // width: 50vw;
+        margin-left: 5vw;
+
+          // height: 50vh;
+          // background-color: #ccc;
         }
       }
 
@@ -368,6 +377,7 @@
         height: 60vh;
         // background-color: #245441;
         @include flexCenter(flex-start, flex-end);
+        // border: 1px solid red;
 
         &>div:nth-child(1) {
           width: 25vw;
