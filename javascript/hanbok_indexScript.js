@@ -138,7 +138,7 @@ hanbok_tradition.addEventListener('wheel', function (e) {
 
         boxVisible(containerArr[i]);
       }
-    }, 800);
+    }, 500);
   }
 });
 

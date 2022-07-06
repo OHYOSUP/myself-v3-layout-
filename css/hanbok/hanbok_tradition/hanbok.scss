@@ -49,26 +49,24 @@
     }
   }
 
-  &>ul {
-    width: 40vw;
-    height: 5vh;
-    list-style-type: none;
-    @include flexCenter(space-around, center);
-    position: fixed;
-    z-index: 100;
-    left: -17vw;
-    transform: rotate(-90deg);
-    mix-blend-mode: difference;
+  // &>ul {
+  //   width: 40vw;
+  //   height: 5vh;
+  //   list-style-type: none;
+  //   @include flexCenter(space-around, center);
+  //   position: fixed;
+  //   z-index: 100;
+  //   left: -17vw;
+  //   transform: rotate(-90deg);
+  //   mix-blend-mode: difference;
 
-    &>li {
-      width: 13vw;
-      height: 5vh;
-      @include flexCenter(space-around, center);
-      font-weight: 800;
-
-
-    }
-  }
+  //   &>li {
+  //     width: 13vw;
+  //     height: 5vh;
+  //     @include flexCenter(space-around, center);
+  //     font-weight: 800;
+  //   }
+  // }
 }
 
 #title {

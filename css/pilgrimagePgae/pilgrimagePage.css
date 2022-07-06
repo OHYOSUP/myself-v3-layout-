@@ -27,36 +27,6 @@ body {
   transform: scale(6, 11);
   color: #BA3737;
 }
-#main nav {
-  width: 100vw;
-  height: 10vh;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #2D2D2D;
-  position: fixed;
-  top: 0;
-  z-index: 100;
-}
-#main nav > ul {
-  width: 100vw;
-  height: 15vh;
-  background-color: #373737;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  list-style-type: none;
-}
-#main nav > ul > li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  font-size: 2rem;
-  font-weight: 800;
-  letter-spacing: 5px;
-  transform: scale(2, 3.5);
-}
 
 #titleText {
   opacity: 1;
@@ -174,14 +144,13 @@ body {
 }
 #background #newContainer {
   width: 100vw;
-  height: 70vh;
+  height: 200vh;
   z-index: 1;
   position: relative;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  opacity: 0;
 }
 #background #newContainer > div {
   width: 90vw;
@@ -198,6 +167,76 @@ body {
 #background #newContainer > div > p {
   margin-left: 2vw;
   letter-spacing: 2px;
+}
+#background #newContainer > div:nth-child(4) {
+  width: 100vw;
+  height: 120vh;
+  background-color: #2D2D2D;
+  border: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#background #newContainer > div:nth-child(4) > div:nth-child(1) {
+  width: 50vw;
+  height: 120vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+#background #newContainer > div:nth-child(4) > div:nth-child(1) > div:nth-child(1) {
+  width: 37vw;
+}
+#background #newContainer > div:nth-child(4) > div:nth-child(1) > div:nth-child(2) {
+  width: 40vw;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+#background #newContainer > div:nth-child(4) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) {
+  width: 37vw;
+  font-size: 1rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  line-height: 25px;
+  text-align: justify;
+}
+#background #newContainer > div:nth-child(4) > div:nth-child(1) > div:nth-child(1) {
+  width: 40vw;
+  height: 80vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#background #newContainer > div:nth-child(4) > div:nth-child(2) {
+  width: 47vw;
+  height: 105vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+#background #newContainer > div:nth-child(4) > div:nth-child(2) > div:nth-child(2) {
+  width: 47vw;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#background #newContainer > div:nth-child(4) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) {
+  width: 47vw;
+  height: 10vh;
+  font-size: 1rem;
+  font-weight: 200;
+  line-height: 25px;
+  text-align: justify;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #background > div:nth-child(7) {
   width: 100vw;
@@ -220,16 +259,13 @@ body {
 }
 #background #pilgrimage_rising {
   width: 100vw;
-  height: 80vh;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   flex-direction: column;
-  opacity: 0;
 }
 #background #pilgrimage_rising > div:nth-child(1) {
   width: 90vw;
-  height: 80vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -245,4 +281,23 @@ body {
   color: #fff;
   font-size: 2rem;
   letter-spacing: 2px;
+}
+#background #pilgrimage_rising > div:nth-child(2) {
+  width: 90vw;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+#background #pilgrimage_rising > div:nth-child(2) > div:nth-child(1) {
+  width: 80vw;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 200;
+  line-height: 25px;
+  text-align: justify;
 }/*# sourceMappingURL=pilgrimagePage.css.map */

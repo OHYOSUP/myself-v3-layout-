@@ -40,35 +40,35 @@ body {
   }
 
 
-  nav {
-    width: 100vw;
-    height: 10vh;
-    @include flexCenter(space-around, center);
-    background-color: #2D2D2D;
-    position: fixed;
-    top: 0;
-    z-index: 100;
+  // nav {
+  //   width: 100vw;
+  //   height: 10vh;
+  //   @include flexCenter(space-around, center);
+  //   background-color: #2D2D2D;
+  //   position: fixed;
+  //   top: 0;
+  //   z-index: 100;
 
-    &>ul {
-      width: 100vw;
-      height: 15vh;
-      background-color: #373737;
-      @include flexCenter(space-around, center);
-      list-style-type: none;
+  //   &>ul {
+  //     width: 100vw;
+  //     height: 15vh;
+  //     background-color: #373737;
+  //     @include flexCenter(space-around, center);
+  //     list-style-type: none;
 
-      &>li {
-        // width: 33vw;
-        // height: 15vh;
-        @include flexCenter(center, center);
+  //     &>li {
+  //       // width: 33vw;
+  //       // height: 15vh;
+  //       @include flexCenter(center, center);
 
-        color: #fff;
-        font-size: 2rem;
-        font-weight: 800;
-        letter-spacing: 5px;
-        transform: scale(2, 3.5);
-      }
-    }
-  }
+  //       color: #fff;
+  //       font-size: 2rem;
+  //       font-weight: 800;
+  //       letter-spacing: 5px;
+  //       transform: scale(2, 3.5);
+  //     }
+  //   }
+  // }
 }
 
 #titleText {
@@ -209,12 +209,13 @@ body {
 
   #newContainer {
     width: 100vw;
-    height: 70vh;
+    height: 200vh;
     z-index: 1;
     position: relative;
+    // border: 1px solid #fff;
     @include flexCenter(space-around, center);
     flex-direction: column;
-    opacity: 0;
+    // opacity: 0;
 
     &>div {
       width: 90vw;
@@ -230,6 +231,77 @@ body {
       &>p {
         margin-left: 2vw;
         letter-spacing: 2px;
+      }
+    }
+
+    &>div:nth-child(4){
+      width: 100vw;
+      height: 120vh;
+      background-color: #2D2D2D;
+      border: none;
+      @include flexCenter(flex-start, center);
+
+      &>div:nth-child(1){
+        width: 50vw;
+        height: 120vh;
+        // border: 1px solid yellow;
+        @include flexCenter(flex-start, center);
+        flex-direction: column;
+
+        &>div:nth-child(1){
+        width: 37vw;
+        // border: 1px solid yellow;
+        }
+
+        &>div:nth-child(2){
+          width: 40vw;
+          height: 30vh;
+          // border: 1px solid yellow;
+          @include flexCenter(center, flex-start);
+
+          &>div:nth-child(1){
+          width: 37vw;
+          font-size: 1rem;
+          font-weight: 500;
+          @include flexCenter(center, flex-end);
+          line-height: 25px;
+          text-align: justify;
+          }
+        }
+
+        &>div:nth-child(1){
+          width: 40vw;
+          height: 80vh;
+          // border: 1px solid blue;
+          @include flexCenter(space-around, center);
+        }
+      }
+      
+      &>div:nth-child(2){
+        width: 47vw;
+        height: 105vh;
+        @include flexCenter(flex-start, center);
+        // border: 1px solid red;
+        flex-direction: column;
+
+        &>div:nth-child(2){
+          width: 47vw;
+          height: 30vh;
+          // background-color: #BA3737;
+          @include flexCenter(center, center);
+
+          &>div:nth-child(1){
+            width: 47vw;
+            height: 10vh;
+            font-size: 1rem;
+            font-weight: 200;
+            line-height: 25px;
+            text-align: justify;
+            @include flexCenter(center, center);
+            // border: 1px solid red;
+          }
+        }
+
       }
     }
   }
@@ -260,14 +332,14 @@ body {
 
   #pilgrimage_rising {
     width: 100vw;
-    height: 80vh;
+    // height: 80vh;
     @include flexCenter(flex-end, center);
     flex-direction: column;
-    opacity: 0;
+    // opacity: 0;
 
     &>div:nth-child(1) {
       width: 90vw;
-      height: 80vh;
+      // height: 80vh;
       @include flexCenter(space-around, center);
 
       &>div {
@@ -280,6 +352,26 @@ body {
           font-size: 2rem;
           letter-spacing: 2px;
         }
+      }
+    }
+
+    &>div:nth-child(2){
+      width: 90vw;
+      height: 30vh;
+      // border: 1px solid red;
+      @include flexCenter(center, flex-start);
+
+      &>div:nth-child(1){
+        width: 80vw;
+        height: 20vh;
+      // border: 1px solid red;
+      @include flexCenter(center, center);
+
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 200;
+      line-height: 25px;
+      text-align: justify;
       }
     }
   }

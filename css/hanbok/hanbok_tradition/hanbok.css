@@ -41,27 +41,6 @@
   border-left: 200px solid transparent;
   border-right: 200px solid transparent;
 }
-#root > ul {
-  width: 40vw;
-  height: 5vh;
-  list-style-type: none;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  position: fixed;
-  z-index: 100;
-  left: -17vw;
-  transform: rotate(-90deg);
-  mix-blend-mode: difference;
-}
-#root > ul > li {
-  width: 13vw;
-  height: 5vh;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  font-weight: 800;
-}
 
 #title {
   width: 30vw;
