@@ -65,6 +65,7 @@ nextPage(root, 'wheel', description_one);
 // scrollElemFadein(root,"",containerOne, 3);
 // scrollElemFadein(hanbok_tradition,"",description_one, 5);
 // scrollElemFadein(hanbok_tradition,"",containerTwo, 13);
+prevPage(hanbok_newWave_mainPage, 'wheel', containerFour);
 
 
 
@@ -130,7 +131,7 @@ hanbok_tradition.addEventListener('wheel', function (e) {
 
         boxVisible(containerArr[i]);
       }
-    }, 300);
+    }, 800);
   }
 });
 
@@ -146,12 +147,11 @@ hanbok_tradition.addEventListener('wheel', function (e) {
         prevPage(containerTwo, 'wheel', containerOne);
         prevPage(containerThree, 'wheel', containerTwo);
         prevPage(containerFour, 'wheel', containerThree);
-        prevPage(hanbok_newWave_mainPage, 'wheel', containerFour);
         // prevPage(legacyLastPage_frameOne, 'wheel', newWave_color);
 
         // boxInVisible(containerArr[i]);
       }
-    }, 300);
+    }, 500);
   }
 })
 

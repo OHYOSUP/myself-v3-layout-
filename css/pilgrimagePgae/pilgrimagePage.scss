@@ -105,6 +105,7 @@
     left: 5vw;
     @include flexCenter(space-around, center);
     flex-direction: column;
+    opacity: 0;
 
 
     &>div:nth-child(1) {
@@ -116,7 +117,6 @@
         color: #BA3737;
         transform: scale(6, 10);
         font-weight: 1000;
-        opacity: 0;
 
       }
     }
@@ -133,7 +133,7 @@
         letter-spacing: 2px;
         color: #fff;
         font-weight: 700;
-        opacity: 0;
+        // opacity: 0;
 
       }
     }
@@ -171,7 +171,7 @@
       color: #2D2D2D;
       font-weight: 1000;
       // transform: scale(12,25);
-      // opacity: 0;
+      opacity: 0;
   }
 
   .indiTextFade{
@@ -190,6 +190,8 @@
     z-index: 1;
     position: relative;
     @include flexCenter(flex-start, center);
+    opacity: 0;
+
 
     &>span {
       margin-left: 15vw;
@@ -206,6 +208,7 @@
     position: relative;
     @include flexCenter(space-around, center);
     flex-direction: column;
+    opacity: 0;
 
     &>div {
       width: 90vw;
@@ -244,6 +247,8 @@
       height: 20vh;
       @include flexCenter(center, center);
       // border: 1px solid red;
+    opacity: 0;
+
     }
   }
 
@@ -252,6 +257,7 @@
     height: 80vh;
     @include flexCenter(flex-end, center);
     flex-direction: column;
+    opacity: 0;
 
     &>div:nth-child(1) {
       width: 90vw;

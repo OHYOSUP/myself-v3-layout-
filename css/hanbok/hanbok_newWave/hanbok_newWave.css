@@ -140,6 +140,7 @@
 
 #hanbok_legacy {
   width: 100vw;
+  overflow: hidden;
   background-color: #252525;
 }
 #hanbok_legacy > div:nth-child(1) {
