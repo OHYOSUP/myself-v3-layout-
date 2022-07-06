@@ -1,7 +1,7 @@
 import { nextPage, prevPage } from "./pageScrollEvent/pageScrollEvent.js";
 import { fade, titleTextStyle } from "./pilgrimage-titleText-fadein/pilgrimage_pageOneText-anim.js";
-import {scrollArrElemFadein} from "./element-scroll-fadein/arrElment-scroll-fadein.js"
-import { scrollElemFadein } from "./element-scroll-fadein/element-scroll-fadein.js";
+// import {scrollArrElemFadein} from "./element-scroll-fadein/arrElment-scroll-fadein.js"
+// import { scrollElemFadein } from "./element-scroll-fadein/element-scroll-fadein.js";
 import { indiTextFade, indiTextStyle } from "./pilgrimage-indiText-fadein/pilgrimage_indiText-fadein.js";
 import { scrollFunctionFadein } from "./element-scroll-fadein/function-scroll-fadein.js";
 import { pilgrimage_naviEvent } from "./pilgrimage_naviEvent/hanbok_navigation.js";
