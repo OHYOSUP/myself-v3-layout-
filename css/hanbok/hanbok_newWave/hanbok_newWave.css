@@ -134,7 +134,7 @@
 
 #newWave_linearBgc {
   width: 100vw;
-  height: 100vh;
+  height: 300vh;
   background: linear-gradient(#ffffff, #252525);
 }
 
@@ -346,4 +346,8 @@
   font-weight: 700;
   color: #fff;
   font-size: 2rem;
+}
+#hanbok_legacy #hanbok_legacy_lastpage > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > p {
+  width: 25vw;
+  opacity: 0;
 }/*# sourceMappingURL=hanbok_newWave.css.map */

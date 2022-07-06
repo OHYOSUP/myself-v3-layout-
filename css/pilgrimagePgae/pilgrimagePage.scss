@@ -15,7 +15,9 @@
 //   transition: 0.5s;
 // }
 
-
+body {
+  overflow-x: hidden;
+}
 
 
 #main {
@@ -46,6 +48,7 @@
     position: fixed;
     top: 0;
     z-index: 100;
+
     &>ul {
       width: 100vw;
       height: 15vh;
@@ -68,12 +71,12 @@
   }
 }
 
-#titleText{
-  
+#titleText {
+
   opacity: 1;
 }
 
-.fade{
+.fade {
   opacity: 1;
   transition: 0.7s ease;
   transform: translateX(50px);
@@ -93,7 +96,7 @@
     width: 100vw;
     height: 100vh;
     // background-color: #ccc;
-  z-index: 100;
+    z-index: 100;
 
   }
 
@@ -126,6 +129,7 @@
       height: 45vh;
       @include flexCenter(space-around, center);
       flex-direction: column;
+
       // opacity: 0;
       &>span {
         height: 5vh;
@@ -151,9 +155,11 @@
 
       @include flexCenter(flex-end, center);
       flex-direction: column;
-      &>div:nth-child(1){
+
+      &>div:nth-child(1) {
         opacity: 0;
       }
+
       &>div:nth-child(2) {
         width: 45vw;
         color: #fff;
@@ -166,22 +172,22 @@
   }
 
   #indiText {
-      // width: 90vw;
-      font-size: 12rem;
-      color: #2D2D2D;
-      font-weight: 1000;
-      // transform: scale(12,25);
-      opacity: 0;
+    // width: 90vw;
+    font-size: 12rem;
+    color: #2D2D2D;
+    font-weight: 1000;
+    // transform: scale(12,25);
+    opacity: 0;
   }
 
-  .indiTextFade{
+  .indiTextFade {
     opacity: 1;
     transition: 0.7s ease;
     transform: translateX(50px);
     color: #f3f3f3;
 
   }
-  
+
 
 
   #newsText {
@@ -242,12 +248,12 @@
     font-weight: 800;
     @include flexCenter(flex-start, center);
 
-    &>div:nth-child(1){
+    &>div:nth-child(1) {
       width: 45vw;
       height: 20vh;
       @include flexCenter(center, center);
       // border: 1px solid red;
-    opacity: 0;
+      opacity: 0;
 
     }
   }
@@ -278,4 +284,3 @@
     }
   }
 }
-

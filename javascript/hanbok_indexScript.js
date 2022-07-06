@@ -50,6 +50,8 @@ const next = document.getElementById('nextBtn');
 const legacyMainContainer = document.getElementById('legacyMainContainer');
 const description_Two = document.getElementById('description_Two')
 const description_Three = document.getElementById('description_Three')
+const legacyMain = document.getElementById('legacyMain');
+const legacyAnchor = document.getElementById('legacyAnchor');
 
 const lastPage_images = Array.from(image);
 const lastPage_imageName = Array.from(imageName);
@@ -62,14 +64,19 @@ legacyMainSlidePrev('click');
 
 
 nextPage(root, 'wheel', description_one);
+// nextPage(newWave_color, 'wheel', legacyMainContainer);
+
+
+// test(newWave_color, 'wheel', legacyMainContainer)
+
 // scrollElemFadein(root,"",containerOne, 3);
 // scrollElemFadein(hanbok_tradition,"",description_one, 5);
 // scrollElemFadein(hanbok_tradition,"",containerTwo, 13);
 prevPage(hanbok_newWave_mainPage, 'wheel', containerFour);
+prevPage(legacyAnchor, 'wheel', newWave_color);
 
 
-
-elementFade(hanbok_tradition);
+// elementFade(hanbok_tradition);
 
 
 

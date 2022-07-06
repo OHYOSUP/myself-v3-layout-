@@ -5,7 +5,7 @@ const lastPage_images = Array.from(image);
 const lastPage_imageName = Array.from(imageName);
 
 
-console.log(lastPage_images);
+// console.log(lastPage_images);
 console.log(lastPage_imageName);
 
 
