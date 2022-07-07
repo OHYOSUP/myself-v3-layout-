@@ -27,6 +27,36 @@ body {
   transform: scale(6, 11);
   color: #BA3737;
 }
+#main nav {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #2D2D2D;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+#main nav > ul {
+  width: 100vw;
+  height: 10vh;
+  background-color: #373737;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+}
+#main nav > ul > li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 5px;
+  transform: scale(2, 3);
+}
 
 #titleText {
   opacity: 1;
@@ -294,22 +324,22 @@ body {
   font-size: 2rem;
   letter-spacing: 2px;
 }
-#background #pilgrimage_rising > div:nth-child(2) {
+#background #pilgrimage_rising > div:nth-child(3) {
   width: 100vw;
   display: flex;
   align-items: center;
   overflow-x: hidden;
   opacity: 0;
 }
-#background #pilgrimage_rising > div:nth-child(2) > div:nth-child(1) {
+#background #pilgrimage_rising > div:nth-child(3) > div:nth-child(1) {
   width: 50vw;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#background #pilgrimage_rising > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) {
+#background #pilgrimage_rising > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) {
   width: 40vw;
-  height: 100vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -317,7 +347,7 @@ body {
   position: relative;
   overflow-x: hidden;
 }
-#background #pilgrimage_rising > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) {
+#background #pilgrimage_rising > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) {
   width: 120vw;
   height: 50vh;
   display: flex;
@@ -325,20 +355,20 @@ body {
   align-items: center;
   position: absolute;
 }
-#background #pilgrimage_rising > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div {
+#background #pilgrimage_rising > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div {
   width: 40vw;
   height: 50vh;
   top: 0;
   left: 38vw;
 }
-#background #pilgrimage_rising > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) {
+#background #pilgrimage_rising > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) {
   width: 60vw;
   height: 80vh;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
 }
-#background #pilgrimage_rising > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) {
+#background #pilgrimage_rising > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) {
   width: 25vw;
   height: 8vh;
   display: flex;
@@ -346,7 +376,7 @@ body {
   align-items: center;
   flex-direction: column;
 }
-#background #pilgrimage_rising > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div {
+#background #pilgrimage_rising > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div {
   cursor: default;
   width: 5vw;
   height: 3vh;
@@ -354,17 +384,17 @@ body {
   font-weight: 600;
   font-size: 1.2rem;
 }
-#background #pilgrimage_rising > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) {
+#background #pilgrimage_rising > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-#background #pilgrimage_rising > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) {
+#background #pilgrimage_rising > div:nth-child(3) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-#background #pilgrimage_rising > div:nth-child(2) > div:nth-child(2) {
+#background #pilgrimage_rising > div:nth-child(3) > div:nth-child(2) {
   width: 50vw;
   height: 60vh;
   display: flex;
@@ -376,10 +406,10 @@ body {
   line-height: 25px;
   text-align: justify;
 }
-#background #pilgrimage_rising > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) {
+#background #pilgrimage_rising > div:nth-child(3) > div:nth-child(2) > div:nth-child(1) {
   width: 35vw;
   height: 60vh;
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-end;
 }/*# sourceMappingURL=pilgrimagePage.css.map */

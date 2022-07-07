@@ -40,35 +40,35 @@ body {
   }
 
 
-  // nav {
-  //   width: 100vw;
-  //   height: 10vh;
-  //   @include flexCenter(space-around, center);
-  //   background-color: #2D2D2D;
-  //   position: fixed;
-  //   top: 0;
-  //   z-index: 100;
+  nav {
+    width: 100vw;
+    height: 10vh;
+    @include flexCenter(space-around, center);
+    background-color: #2D2D2D;
+    position: fixed;
+    top: 0;
+    z-index: 100;
 
-  //   &>ul {
-  //     width: 100vw;
-  //     height: 15vh;
-  //     background-color: #373737;
-  //     @include flexCenter(space-around, center);
-  //     list-style-type: none;
+    &>ul {
+      width: 100vw;
+      height: 10vh;
+      background-color: #373737;
+      @include flexCenter(space-around, center);
+      list-style-type: none;
 
-  //     &>li {
-  //       // width: 33vw;
-  //       // height: 15vh;
-  //       @include flexCenter(center, center);
+      &>li {
+        // width: 33vw;
+        // height: 15vh;
+        @include flexCenter(center, center);
 
-  //       color: #fff;
-  //       font-size: 2rem;
-  //       font-weight: 800;
-  //       letter-spacing: 5px;
-  //       transform: scale(2, 3.5);
-  //     }
-  //   }
-  // }
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: 800;
+        letter-spacing: 5px;
+        transform: scale(2, 3);
+      }
+    }
+  }
 }
 
 #titleText {
@@ -369,7 +369,7 @@ body {
       }
     }
 
-    &>div:nth-child(2) {
+    &>div:nth-child(3) {
       width: 100vw;
       // height: 30vh;
       // border: 1px solid red;
@@ -379,13 +379,14 @@ body {
       overflow-x: hidden;
       // flex-direction: column;
       opacity: 0;
+      
       &>div:nth-child(1){
         width: 50vw;
         @include flexCenter(center, center);
 
         &>div:nth-child(1){
           width: 40vw;
-          height: 100vh;
+          height: 90vh;
           // border: 1px solid red;
           @include flexCenter(center, center);
           flex-direction: column;
@@ -460,7 +461,7 @@ body {
           width: 35vw;
           height: 60vh;
           // border: 1px solid #fff;
-        @include flexCenter(flex-start, center);
+        @include flexCenter(flex-start, flex-end);
 
         }
       }

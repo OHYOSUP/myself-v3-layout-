@@ -21,7 +21,7 @@ import {
 } from "./element-scroll-fadein/function-scroll-fadein.js";
 import {
   pilgrimage_naviEvent
-} from "./pilgrimage_naviEvent/hanbok_navigation.js";
+} from "./pilgrimage_naviEvent/pilgrimage_navigation.js";
 import {
   scrollValueEvent
 } from "./pilgrimageScrollValueEvent/pilgrimageScrollValueEvent.js";
@@ -49,13 +49,6 @@ pilgrimageRisingSlideNext('click');
 fade();
 titleTextStyle('15rem', 1000, 'relative', 10, 0, '2vh');
 
-// scrollFunctionFadein(background,30);
-
-// --------------------------------------------------------
-
-// let actorTextBoxYvalue = window.pageYOffset + actorbox.getBoundingClientRect().top;;
-
-// console.log(actorTextBoxYvalue);
 
 
 const container = document.querySelectorAll('.container');
@@ -102,13 +95,6 @@ background.addEventListener('wheel', function (e) {
 
         // console.log(e.deltaY);
         console.log(i);
-        // nextPage(background, 'wheel', container[i + 1]);
-        // nextPage(containerTwo, 'wheel', containerThree);
-        // nextPage(containerThree, 'wheel', containerFour);
-        // nextPage(containerFour, 'wheel', hanbok_newWave_mainPage);
-        // nextPage(hanbok_newWave_mainPage, 'wheel', newWave_color);
-        // nextPage(newWave_color, 'wheel', legacyLastPage_frameOne);
-
         boxVisible(containerArr[i]);
       }
     }, 400);
@@ -124,11 +110,6 @@ background.addEventListener('wheel', function (e) {
         indexCheckOpposite();
         // console.log(e.deltaY);
         // console.log(i);
-        // prevPage(containerOne, 'wheel', root);
-        // prevPage(containerTwo, 'wheel', containerOne);
-        // prevPage(containerThree, 'wheel', containerTwo);
-        // prevPage(containerFour, 'wheel', containerThree);
-        // prevPage(legacyLastPage_frameOne, 'wheel', newWave_color);
 
         // boxInVisible(containerArr[i]);
       }
@@ -137,4 +118,3 @@ background.addEventListener('wheel', function (e) {
 })
 
 
-// indiTextStyle(0, 700, 'relative', 10, 0, '5vh');
