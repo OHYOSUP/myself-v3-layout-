@@ -13,7 +13,7 @@ import {
 } from "./Hanbok/newWave/hanbokNewwave-imageChange.js";
 import {
   legacySlide
-} from "./Hanbok/newWave/hanbokLegacyParallSlide.js"
+} from "./Hanbok/legacy/hanbokLegacyParallSlide.js"
 import {
   mouseoverEvent,
   mouseoutEvent
@@ -162,9 +162,68 @@ hanbok_tradition.addEventListener('wheel', function (e) {
   }
 })
 
+// newWave Event
+
+
+const legacy_container = document.querySelectorAll('.legacy_container')
+console.log(legacy_container);
+
+const legacy_containerArr = Array.from(legacy_container);
+
+let l = -1;
+
+function legacy_indexCheck() {
+  l++;
+  if (l >= 4) {
+    l = 4;
+  }
+  // console.log(i);
+}
+
+function legacy_indexCheckOpposite() {
+  l--;
+  if (l <= 0) {
+    l = 0;
+  }
+  // console.log(i);
+}
+
+function legacy_boxVisible() {
+  legacy_containerArr[l].style.opacity = 1;
+  legacy_containerArr[l].style.transition = '0.5s';
+}
+
+hanbok_legacy.addEventListener('wheel', function (e) {
+  if (!timer) {
+    timer = setTimeout(function () {
+      timer = null;
+      if (e.deltaY > 0) {
+        legacy_indexCheck();
+        legacy_boxVisible(containerArr[l]);
+
+        // console.log(e.deltaY);
+        console.log(l);
+
+      }
+    }, 500);
+  }
+});
+
+// nextPage(legacyAnchor, 'wheel', hanbok_legacy_slide);
+
+
 
 colorChange('mouseover');
 legacySlide(hanbok_legacy_slide, 'wheel');
+
+
+// legacy Event
+
+
+
+
+
+
 
 
 

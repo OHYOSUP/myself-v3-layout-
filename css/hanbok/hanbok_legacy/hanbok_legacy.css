@@ -124,6 +124,7 @@
   flex-direction: column;
 }
 #hanbok_legacy > div:nth-child(2) > div:nth-child(2) #legacyMain_nav > div:nth-child(1) > div:nth-child(1) {
+  cursor: default;
   width: 5vw;
   height: 5vh;
   display: flex;
@@ -131,6 +132,7 @@
   align-items: center;
 }
 #hanbok_legacy > div:nth-child(2) > div:nth-child(2) #legacyMain_nav > div:nth-child(1) > div:nth-child(2) {
+  cursor: default;
   width: 5vw;
   height: 5vh;
   display: flex;
@@ -138,11 +140,12 @@
   align-items: center;
 }
 #hanbok_legacy #hanbok_legacy_slide {
-  width: 190vw;
+  width: 600vw;
   background-color: #252525;
+  opacity: 0;
 }
 #hanbok_legacy #hanbok_legacy_slide > div:nth-child(1) {
-  width: 150vw;
+  width: 600vw;
   height: 55vh;
   display: flex;
   overflow: hidden;
@@ -150,6 +153,56 @@
 #hanbok_legacy #hanbok_legacy_slide > div:nth-child(1) > div {
   margin-left: 10px;
   overflow: hidden;
+}
+#hanbok_legacy #legacy_des {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#hanbok_legacy #legacy_des > div:nth-child(1) {
+  width: 50vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+}
+#hanbok_legacy #legacy_des > div:nth-child(1) > div:nth-child(1) {
+  width: 50vw;
+  height: 10vh;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#hanbok_legacy #legacy_des > div:nth-child(1) > div:nth-child(2) {
+  width: 50vw;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#hanbok_legacy #legacy_des > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) {
+  width: 42vw;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  color: #fff;
+  font-weight: 300;
+  flex-direction: column;
+  line-height: 35px;
+}
+#hanbok_legacy #legacy_des > div:nth-child(2) {
+  width: 40vw;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #hanbok_legacy #hanbok_legacy_lastpage {
   width: 100vw;

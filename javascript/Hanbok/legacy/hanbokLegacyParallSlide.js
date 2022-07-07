@@ -27,12 +27,12 @@ export function legacySlide(targetElem, eventType){
 
 function legacyBgSlide() {
   requestAnimationFrame(legacyBgSlide);
-  if (i < 975 && isStatus === true) {
+  if (i < 5820 && isStatus === true) {
     i++;
     // console.log(i);
     hanbok_legacy_slide.style.transform = `translateX(${-i}px)`;
-    if (i >= 1300) {
-      i = 1300
+    if (i >= 5820) {
+      i = 5820
     }
   }
 };
