@@ -5,7 +5,7 @@ import {
 import {
   fade,
   titleTextStyle
-} from "./pilgrimage-titleText-fadein/pilgrimage_pageOneText-anim.js";
+} from "./pilgrimage/pilgrimage-titleText-fadein/pilgrimage_pageOneText-anim.js";
 import {
   scrollArrElemFadein
 } from "./element-scroll-fadein/arrElment-scroll-fadein.js"
@@ -15,17 +15,17 @@ import {
 import {
   indiTextFade,
   indiTextStyle
-} from "./pilgrimage-indiText-fadein/pilgrimage_indiText-fadein.js";
+} from "./pilgrimage/pilgrimage-indiText-fadein/pilgrimage_indiText-fadein.js";
 import {
   scrollFunctionFadein
 } from "./element-scroll-fadein/function-scroll-fadein.js";
 import {
   pilgrimage_naviEvent
-} from "./pilgrimage_naviEvent/pilgrimage_navigation.js";
+} from "./pilgrimage/pilgrimage_naviEvent/pilgrimage_navigation.js";
 import {
   scrollValueEvent
-} from "./pilgrimageScrollValueEvent/pilgrimageScrollValueEvent.js";
-import {pilgrimageRisingSlideNext, pilgrimageRisingSlidePrev} from"./pilgrimage_rising_parallaxSlide/pilgrimage_legacy_lastPage_parallaxSlide.js"
+} from "./pilgrimage/pilgrimageScrollValueEvent/pilgrimageScrollValueEvent.js";
+import {pilgrimageRisingSlideNext, pilgrimageRisingSlidePrev} from"./pilgrimage/pilgrimage_rising_parallaxSlide/pilgrimage_legacy_lastPage_parallaxSlide.js"
 
 const main = document.getElementById('main');
 const background = document.getElementById('background');

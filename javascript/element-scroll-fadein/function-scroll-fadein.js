@@ -1,4 +1,4 @@
-import { indiTextFade } from "../pilgrimage-indiText-fadein/pilgrimage_indiText-fadein.js";
+import { indiTextFade } from "../pilgrimage/pilgrimage-indiText-fadein/pilgrimage_indiText-fadein.js";
 
 let posY = 0;
 let i = 0;
