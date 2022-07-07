@@ -21,7 +21,7 @@ import {
 import {
   legacyMainSlideNext,
   legacyMainSlidePrev
-} from "../test/hanbok_legacy_mainPage_slide.js";
+} from "./Hanbok/legacy/hanbok_legacy_mainPage_slide.js";
 import {
   hanbok_naviEvent
 } from "./Hanbok/hanbok_navigation/hanbok_navigation.js";
@@ -166,7 +166,7 @@ hanbok_tradition.addEventListener('wheel', function (e) {
 
 
 const legacy_container = document.querySelectorAll('.legacy_container')
-console.log(legacy_container);
+// console.log(legacy_container);
 
 const legacy_containerArr = Array.from(legacy_container);
 
@@ -202,7 +202,7 @@ hanbok_legacy.addEventListener('wheel', function (e) {
         legacy_boxVisible(containerArr[l]);
 
         // console.log(e.deltaY);
-        console.log(l);
+        // console.log(l);
 
       }
     }, 500);

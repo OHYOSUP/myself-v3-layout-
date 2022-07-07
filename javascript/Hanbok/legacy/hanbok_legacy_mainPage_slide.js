@@ -1,13 +1,13 @@
 const slide = document.querySelector('.slide');
 const slideImg = document.querySelectorAll('.slide li');
-const prev = document.querySelector('.prev');
-const next = document.querySelector('.next');
+const prev = document.querySelector('.prevBtn');
+const next = document.querySelector('.nextBtn');
 
-console.log(prev);
+// console.log(prev);
 
 let currentIndex = 0;
 let slideCount = slideImg.length;
-console.log(slideImg);
+// console.log(slideImg);
 
 let slideWidth = 532;
 let slideMargin = 50;
@@ -27,44 +27,47 @@ function initfunction(){
 makeClone();
 initfunction();
 
-next.addEventListener('click', function(){
-if(currentIndex < slideCount - 1 ){
-  console.log(currentIndex);
-
-  slide.style.left = -(currentIndex + 2) * (slideMargin + slideWidth) + 'px';
-  slide.style.transition = `${0.5}s ease-out`;
-}
-if(currentIndex === slideCount-1){
-  console.log(currentIndex);
-
-  // setTimeout(function(){
-    slide.style.left = -(slideMargin + slideWidth) + 'px';
-    slide.style.transition = `${0}s ease-out`;
-  // },200);
-  currentIndex = -1;
-}
-currentIndex += 1;
-});
-
-
-
-prev.addEventListener('click', function(){
-  if(currentIndex > 0){
-    slide.style.left = -currentIndex * (slideMargin + slideWidth) + 'px';
-    slide.style.transition = `${0.5}s ease-out`
-    console.log(currentIndex);
+export function legacyMainSlideNext(eventType){
+  next.addEventListener(eventType, function(){
+  if(currentIndex < slideCount - 1 ){
+    // console.log(currentIndex);
+  
+    slide.style.left = -(currentIndex + 2) * (slideMargin + slideWidth) + 'px';
+    slide.style.transition = `${0.5}s ease-out`;
   }
-  if(currentIndex === 0){
-    console.log(currentIndex);
-
-    setTimeout(function(){
-      slide.style.left = -slideCount * (slideMargin + slideWidth) + 'px';
+  if(currentIndex === slideCount-1){
+    // console.log(currentIndex);
+  
+    // setTimeout(function(){
+      slide.style.left = -(slideMargin + slideWidth) + 'px';
       slide.style.transition = `${0}s ease-out`;
-    },200);
-    currentIndex = slideCount;
+    // },200);
+    currentIndex = -1;
   }
-  currentIndex -= 1;
-})
+  currentIndex += 1;
+  });
+}
+
+export function legacyMainSlidePrev (eventType){
+  
+  prev.addEventListener(eventType, function(){
+    if(currentIndex > 0){
+      slide.style.left = -currentIndex * (slideMargin + slideWidth) + 'px';
+      slide.style.transition = `${0.5}s ease-out`
+      console.log(currentIndex);
+    }
+    if(currentIndex === 0){
+      console.log(currentIndex);
+  
+      setTimeout(function(){
+        slide.style.left = -slideCount * (slideMargin + slideWidth) + 'px';
+        slide.style.transition = `${0}s ease-out`;
+      },200);
+      currentIndex = slideCount;
+    }
+    currentIndex -= 1;
+  })
+}
 
 
 
