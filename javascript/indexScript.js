@@ -57,14 +57,14 @@ titleTextStyle('15rem', 1000, 'relative', 10, 0, '2vh');
 
 const container = document.querySelectorAll('.container');
 const containerArr = Array.from(container);
-console.log(containerArr[0]);
+console.log(containerArr);
 
 let i = -1;
 
 function indexCheck() {
   i++;
-  if (i >= 7) {
-    i = 7;
+  if (i >= 9) {
+    i = 9;
   }
   // console.log(i);
 }

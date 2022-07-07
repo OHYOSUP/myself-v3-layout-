@@ -144,7 +144,6 @@ body {
 }
 #background #newContainer {
   width: 100vw;
-  height: 200vh;
   z-index: 1;
   position: relative;
   display: flex;
@@ -152,7 +151,16 @@ body {
   align-items: center;
   flex-direction: column;
 }
-#background #newContainer > div {
+#background #newContainer > div:nth-child(1) {
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+}
+#background #newContainer > div:nth-child(1) > div {
   width: 90vw;
   height: 15vh;
   background-color: #595959;
@@ -164,11 +172,11 @@ body {
   align-items: center;
   font-weight: 700;
 }
-#background #newContainer > div > p {
+#background #newContainer > div:nth-child(1) > div > p {
   margin-left: 2vw;
   letter-spacing: 2px;
 }
-#background #newContainer > div:nth-child(4) {
+#background #newContainer > div:nth-child(2) {
   width: 100vw;
   height: 120vh;
   background-color: #2D2D2D;
@@ -176,8 +184,9 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  opacity: 0;
 }
-#background #newContainer > div:nth-child(4) > div:nth-child(1) {
+#background #newContainer > div:nth-child(2) > div:nth-child(1) {
   width: 50vw;
   height: 120vh;
   display: flex;
@@ -185,34 +194,35 @@ body {
   align-items: center;
   flex-direction: column;
 }
-#background #newContainer > div:nth-child(4) > div:nth-child(1) > div:nth-child(1) {
+#background #newContainer > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) {
   width: 37vw;
 }
-#background #newContainer > div:nth-child(4) > div:nth-child(1) > div:nth-child(2) {
-  width: 40vw;
+#background #newContainer > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) {
+  width: 35vw;
   height: 30vh;
   display: flex;
   justify-content: center;
   align-items: flex-start;
 }
-#background #newContainer > div:nth-child(4) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) {
-  width: 37vw;
-  font-size: 1rem;
+#background #newContainer > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) {
+  width: 35vw;
+  font-size: 0.8rem;
   font-weight: 500;
   display: flex;
   justify-content: center;
   align-items: flex-end;
   line-height: 25px;
   text-align: justify;
+  color: #fff;
 }
-#background #newContainer > div:nth-child(4) > div:nth-child(1) > div:nth-child(1) {
+#background #newContainer > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) {
   width: 40vw;
   height: 80vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-#background #newContainer > div:nth-child(4) > div:nth-child(2) {
+#background #newContainer > div:nth-child(2) > div:nth-child(2) {
   width: 47vw;
   height: 105vh;
   display: flex;
@@ -220,17 +230,18 @@ body {
   align-items: center;
   flex-direction: column;
 }
-#background #newContainer > div:nth-child(4) > div:nth-child(2) > div:nth-child(2) {
+#background #newContainer > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) {
   width: 47vw;
   height: 30vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#background #newContainer > div:nth-child(4) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) {
+#background #newContainer > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) {
   width: 47vw;
   height: 10vh;
-  font-size: 1rem;
+  font-size: 0.8rem;
+  color: #fff;
   font-weight: 200;
   line-height: 25px;
   text-align: justify;
@@ -269,6 +280,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  opacity: 0;
 }
 #background #pilgrimage_rising > div:nth-child(1) > div {
   display: flex;
@@ -283,20 +295,21 @@ body {
   letter-spacing: 2px;
 }
 #background #pilgrimage_rising > div:nth-child(2) {
-  width: 90vw;
+  width: 80vw;
   height: 30vh;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
+  opacity: 0;
 }
 #background #pilgrimage_rising > div:nth-child(2) > div:nth-child(1) {
-  width: 80vw;
-  height: 20vh;
+  width: 40vw;
+  height: 15vh;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #fff;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 200;
   line-height: 25px;
   text-align: justify;

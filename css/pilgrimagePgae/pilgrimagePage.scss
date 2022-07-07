@@ -209,91 +209,104 @@ body {
 
   #newContainer {
     width: 100vw;
-    height: 200vh;
+    // height: 200vh;
     z-index: 1;
     position: relative;
     // border: 1px solid #fff;
     @include flexCenter(space-around, center);
     flex-direction: column;
-    // opacity: 0;
 
-    &>div {
-      width: 90vw;
-      height: 15vh;
-      background-color: #595959;
-      border: 1px solid #fff;
+    &>div:nth-child(1) {
+      width: 100vw;
+      height: 70vh;
+      // border: 1px solid red;
+      @include flexCenter(space-around, center);
+      flex-direction: column;
+      opacity: 0;
 
-      color: #fff;
-      font-size: 2rem;
-      @include flexCenter(flex-start, center);
-      font-weight: 700;
+      &>div {
+        width: 90vw;
+        height: 15vh;
+        background-color: #595959;
+        border: 1px solid #fff;
 
-      &>p {
-        margin-left: 2vw;
-        letter-spacing: 2px;
+        color: #fff;
+        font-size: 2rem;
+        @include flexCenter(flex-start, center);
+        font-weight: 700;
+
+        &>p {
+          margin-left: 2vw;
+          letter-spacing: 2px;
+        }
       }
     }
 
-    &>div:nth-child(4){
+    &>div:nth-child(2) {
       width: 100vw;
       height: 120vh;
       background-color: #2D2D2D;
       border: none;
       @include flexCenter(flex-start, center);
+      opacity: 0;
 
-      &>div:nth-child(1){
+      &>div:nth-child(1) {
         width: 50vw;
         height: 120vh;
         // border: 1px solid yellow;
         @include flexCenter(flex-start, center);
         flex-direction: column;
 
-        &>div:nth-child(1){
-        width: 37vw;
-        // border: 1px solid yellow;
+        &>div:nth-child(1) {
+          width: 37vw;
+          // border: 1px solid yellow;
         }
 
-        &>div:nth-child(2){
-          width: 40vw;
+        &>div:nth-child(2) {
+          width: 35vw;
           height: 30vh;
           // border: 1px solid yellow;
           @include flexCenter(center, flex-start);
 
-          &>div:nth-child(1){
-          width: 37vw;
-          font-size: 1rem;
-          font-weight: 500;
-          @include flexCenter(center, flex-end);
-          line-height: 25px;
-          text-align: justify;
+          &>div:nth-child(1) {
+            width: 35vw;
+            font-size: 0.8rem;
+            font-weight: 500;
+            @include flexCenter(center, flex-end);
+            line-height: 25px;
+            text-align: justify;
+            color: #fff;
+
           }
         }
 
-        &>div:nth-child(1){
+        &>div:nth-child(1) {
           width: 40vw;
           height: 80vh;
           // border: 1px solid blue;
           @include flexCenter(space-around, center);
         }
       }
-      
-      &>div:nth-child(2){
+
+      &>div:nth-child(2) {
         width: 47vw;
         height: 105vh;
         @include flexCenter(flex-start, center);
         // border: 1px solid red;
         flex-direction: column;
 
-        &>div:nth-child(2){
+        &>div:nth-child(2) {
           width: 47vw;
           height: 30vh;
           // background-color: #BA3737;
           @include flexCenter(center, center);
 
-          &>div:nth-child(1){
+          &>div:nth-child(1) {
             width: 47vw;
             height: 10vh;
-            font-size: 1rem;
+            font-size: 0.8rem;
+            color: #fff;
+
             font-weight: 200;
             line-height: 25px;
             text-align: justify;
@@ -301,7 +314,6 @@ body {
             // border: 1px solid red;
           }
         }
-
       }
     }
   }
@@ -341,6 +353,7 @@ body {
       width: 90vw;
       // height: 80vh;
       @include flexCenter(space-around, center);
+      opacity: 0;
 
       &>div {
         @include flexCenter(center, center);
@@ -355,23 +368,24 @@ body {
       }
     }
 
-    &>div:nth-child(2){
-      width: 90vw;
+    &>div:nth-child(2) {
+      width: 80vw;
       height: 30vh;
       // border: 1px solid red;
-      @include flexCenter(center, flex-start);
+      @include flexCenter(flex-start, flex-start);
+      opacity: 0;
 
-      &>div:nth-child(1){
-        width: 80vw;
-        height: 20vh;
-      // border: 1px solid red;
-      @include flexCenter(center, center);
+      &>div:nth-child(1) {
+        width: 40vw;
+        height: 15vh;
+        // border: 1px solid red;
+        @include flexCenter(center, center);
 
-      color: #fff;
-      font-size: 1rem;
-      font-weight: 200;
-      line-height: 25px;
-      text-align: justify;
+        color: #fff;
+        font-size: 0.8rem;
+        font-weight: 200;
+        line-height: 25px;
+        text-align: justify;
       }
     }
   }
