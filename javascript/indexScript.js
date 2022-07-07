@@ -25,7 +25,7 @@ import {
 import {
   scrollValueEvent
 } from "./pilgrimageScrollValueEvent/pilgrimageScrollValueEvent.js";
-
+import {pilgrimageRisingSlideNext, pilgrimageRisingSlidePrev} from"./pilgrimage_rising_parallaxSlide/pilgrimage_legacy_lastPage_parallaxSlide.js"
 
 const main = document.getElementById('main');
 const background = document.getElementById('background');
@@ -36,6 +36,9 @@ const actorbox = document.getElementById('actorbox');
 // pilgrimage_naviEvent('click');
 
 nextPage(main, 'wheel', pilgrimage_main)
+
+pilgrimageRisingSlidePrev('click');
+pilgrimageRisingSlideNext('click');
 
 
 // scrollValueEvent(background)

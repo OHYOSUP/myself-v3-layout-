@@ -70,8 +70,3 @@ prev.addEventListener('click', function(){
 
 
 
-
-
-
-
-// https://eunhee-programming.tistory.com/166
