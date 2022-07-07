@@ -64,7 +64,7 @@ legacyMainSlidePrev('click');
 
 
 nextPage(root, 'wheel', description_one);
-// nextPage(newWave_color, 'wheel', legacyMainContainer);
+
 
 
 // test(newWave_color, 'wheel', legacyMainContainer)
@@ -73,7 +73,7 @@ nextPage(root, 'wheel', description_one);
 // scrollElemFadein(hanbok_tradition,"",description_one, 5);
 // scrollElemFadein(hanbok_tradition,"",containerTwo, 13);
 prevPage(hanbok_newWave_mainPage, 'wheel', containerFour);
-prevPage(legacyAnchor, 'wheel', newWave_color);
+// prevPage(legacyAnchor, 'wheel', newWave_color);
 
 
 // elementFade(hanbok_tradition);
