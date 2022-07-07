@@ -188,7 +188,7 @@ body {
 }
 #background #newContainer > div:nth-child(2) > div:nth-child(1) {
   width: 50vw;
-  height: 120vh;
+  height: 90vh;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -199,10 +199,10 @@ body {
 }
 #background #newContainer > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) {
   width: 35vw;
-  height: 30vh;
+  height: 35vh;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 }
 #background #newContainer > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) {
   width: 35vw;
@@ -224,7 +224,7 @@ body {
 }
 #background #newContainer > div:nth-child(2) > div:nth-child(2) {
   width: 47vw;
-  height: 105vh;
+  height: 90vh;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -347,6 +347,7 @@ body {
   flex-direction: column;
 }
 #background #pilgrimage_rising > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div {
+  cursor: default;
   width: 5vw;
   height: 3vh;
   color: #fff;

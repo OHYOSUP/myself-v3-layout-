@@ -252,10 +252,11 @@ body {
 
       &>div:nth-child(1) {
         width: 50vw;
-        height: 120vh;
+        height: 90vh;
         // border: 1px solid yellow;
         @include flexCenter(flex-start, center);
         flex-direction: column;
+        // border: 1px solid yellow;
 
         &>div:nth-child(1) {
           width: 37vw;
@@ -264,9 +265,9 @@ body {
 
         &>div:nth-child(2) {
           width: 35vw;
-          height: 30vh;
+          height: 35vh;
           // border: 1px solid yellow;
-          @include flexCenter(center, flex-start);
+          @include flexCenter(center, center);
 
           &>div:nth-child(1) {
             width: 35vw;
@@ -290,7 +291,7 @@ body {
 
       &>div:nth-child(2) {
         width: 47vw;
-        height: 105vh;
+        height: 90vh;
         @include flexCenter(flex-start, center);
         // border: 1px solid red;
         flex-direction: column;
@@ -425,6 +426,7 @@ body {
               flex-direction: column;
   
               &>div{
+                cursor:default;
                 width: 5vw;
                 height: 3vh;
                 color: #fff;
