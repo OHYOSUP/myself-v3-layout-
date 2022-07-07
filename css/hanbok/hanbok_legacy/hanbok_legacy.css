@@ -25,6 +25,10 @@
   mix-blend-mode: overlay;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 #hanbok_legacy {
   width: 100vw;
   overflow: hidden;

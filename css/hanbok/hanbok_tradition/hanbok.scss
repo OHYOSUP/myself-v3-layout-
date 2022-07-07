@@ -16,7 +16,7 @@
   background-image: url(/image/bg/hanbok_background.svg);
   @include flexCenter(center, center);
   overflow: hidden;
-
+  background-size: cover;
   // background-image: url(/image/Toast\ Shiny\ Tulle\ Fabric\ 1.png);
   // background-size: cover;
   &>div:nth-child(1) {

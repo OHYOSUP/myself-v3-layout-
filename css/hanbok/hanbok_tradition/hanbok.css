@@ -12,6 +12,7 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  background-size: cover;
 }
 #root > div:nth-child(1) {
   width: 40vw;

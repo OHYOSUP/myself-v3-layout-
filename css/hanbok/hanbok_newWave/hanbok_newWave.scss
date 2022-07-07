@@ -110,8 +110,12 @@
     &>div {
       width: 45vw;
       height: 15vh;
-      @include flexCenter(center, center);
+      @include flexCenter(flex-start, center);
       flex-direction: column;
+
+      &>div:nth-child(1){
+        font-size: 3.5rem;
+      }
     }
 
     &>div:nth-child(1) {
@@ -142,8 +146,8 @@
   #colorImage {
     width: 40vw;
     height: 90vh;
-    background-color: #ccc;
-    transition: 0.5s;
+    // background-color: #ccc;
+    transition: 0.3s;
     overflow: hidden;
   }
 }
