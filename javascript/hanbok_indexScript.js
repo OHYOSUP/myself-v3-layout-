@@ -2,26 +2,33 @@ import {
   nextPage,
   prevPage
 } from "../javascript/pageScrollEvent/pageScrollEvent.js";
+
 import {
   scrollElemFadein
 } from "./Hanbok/hanbok_element_scroll_fadein.js"
+
 import {
   elementFade
 } from "./Hanbok/elementFade.js";
+
 import {
   colorChange
 } from "./Hanbok/newWave/hanbokNewwave-imageChange.js";
+
 import {
   legacySlide
 } from "./Hanbok/legacy/hanbokLegacyParallSlide.js"
+
 import {
   mouseoverEvent,
   mouseoutEvent
 } from "./Hanbok/legacy/hanbok_legacy_mouseoverEvent.js";
+
 import {
   legacyMainSlideNext,
   legacyMainSlidePrev
 } from "./Hanbok/legacy/hanbok_legacy_mainPage_slide.js";
+
 import {
   hanbok_naviEvent
 } from "./Hanbok/hanbok_navigation/hanbok_navigation.js";
@@ -128,7 +135,7 @@ hanbok_tradition.addEventListener('wheel', function (e) {
         indexCheck();
 
         // console.log(e.deltaY);
-        console.log(i);
+        // console.log(i);
         nextPage(containerOne, 'wheel', containerTwo);
         nextPage(containerTwo, 'wheel', containerThree);
         nextPage(containerThree, 'wheel', containerFour);
@@ -215,47 +222,5 @@ hanbok_legacy.addEventListener('wheel', function (e) {
 
 colorChange('mouseover');
 legacySlide(hanbok_legacy_slide, 'wheel');
-
-
-// legacy Event
-
-
-
-
-
-
-
-
-
-
-// hanbok_tradition.addEventListener('wheel', ()=>{
-//   if(index === 1){
-//   nextPage(root, 'wheel', containerOne);
-//   scrollElemFadein(root,"",containerOne, 3);
-//   }
-// });
-// hanbok_tradition.addEventListener('wheel', ()=>{
-//   if(index === 3){
-//   scrollElemFadein(hanbok_tradition,"",containerTwo, 3);
-//   }
-// });
-// hanbok_tradition.addEventListener('wheel', ()=>{
-//   if(index === 3){
-//   scrollElemFadein(hanbok_tradition,"",containerTwo, 3);
-//   }
-// });
-
-// scrollIntoView로 스크롤 이벤트가 발생했을 때 다음으로 내려가는 위치를 조정한 다음
-// y값이 이제 필요한가?
-// 인덱스가 대신하니까 y값은 필요없지않나
-// 그럼 스크롤 내려간늠나큼만 조정해주고
-// 그거를 인덱스로 매겨서
-// 
-// 1. 한번 휠을 굴렸을 때 얼만큼 내려갈 것인가를 설정해준다
-// 2. 쓰로틀링으로 인덱스를 매겨준도
-// 3. 인덱스 넘버에 따라 해당 위치에 있는 엘리먼트가 fade in 되도록 해준다
-// 결론: y값은 필요없다
-
-
 mouseoverEvent(lastPage_images);
 mouseoutEvent(lastPage_images);
